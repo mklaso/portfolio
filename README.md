@@ -1,3 +1,3 @@
 # mklaso.github.io
-work in progress.
-will update to better showcase projects, along w/ better styling in the future.
+portfolio website - work in progress. <br>
+will update w/ better styling & project showcase in the future.
