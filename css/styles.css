@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("../resources/rsz_forest.png");
+  /* font-size: 1.6rem; */
+  line-height: 1.7;
+  color: grey;
+  padding: 3rem; }
+
+.heading-primary {
+  color: #000;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 2px 2px 2px #aaa;
+    color: rgba(0, 0, 0, 0.7); }
+  .heading-primary--sub {
+    display: block;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.6); }
+  .heading-primary--small {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.8); }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.main_container {
+  width: 30rem;
+  margin: 0 auto;
+  opacity: 0.9; }
+  .main_container a {
+    padding: 1.5rem; }

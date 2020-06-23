@@ -1,0 +1,43 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("../resources/rsz_forest.png");
+  //font-family: "Lato", sans-serif;
+  //letter-spacing: 0.13em;
+  /* font-size: 1.6rem; */
+  line-height: 1.7;
+  color: grey;
+  padding: 3rem;
+}
+
+.heading-primary {
+  color: $color-black;
+
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 2px 2px 2px #aaa;
+    color: rgba($color-black, 0.7);
+  }
+
+  &--sub {
+    display: block;
+    font-size: 3rem;
+
+    color: rgba($color-black, 0.6);
+  }
+
+  &--small {
+    font-size: 2rem;
+    color: rgba($color-black, 0.8);
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
