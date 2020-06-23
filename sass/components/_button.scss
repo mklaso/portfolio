@@ -10,7 +10,7 @@
   transition: transform 0.5s;
 
   &:hover {
-    background-color: lighten($color-light-grey, 30%);
+    background-color: $color-almost-white;
   }
 
   &:active {

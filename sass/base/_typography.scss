@@ -1,19 +1,12 @@
 body {
   font-family: "Inter", sans-serif;
-  height: 100vh;
-  background-image: url("../resources/rsz_forest.png");
-  background-size: cover;
-  /* font-size: 1.6rem; */
-  line-height: 1.7;
+  line-height: 1.5;
   color: grey;
-  //padding: 3rem;
 }
 
 .heading-primary {
   color: $color-black;
-  padding: 4rem;
-  //   margin-left: 20rem;
-
+  padding: 2rem 4rem 4rem;
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
@@ -21,23 +14,24 @@ body {
     display: block;
     font-weight: 800;
     font-size: 6rem;
+    line-height: 7rem;
     text-shadow: 2px 2px 2px #aaa;
-    color: rgba($color-black, 0.7);
+    color: rgba($color-almost-black, 0.85);
   }
 
   &--sub {
     display: block;
-    font-size: 2.4rem;
-
+    font-size: 2.6rem;
+    margin-left: 0.3rem;
     line-height: 1.2;
-    font-weight: 300;
-
+    font-weight: 500;
     color: rgba($color-black, 0.6);
   }
 
   &--small {
-    font-size: 2rem;
-    font-weight: 300;
+    margin-left: 0.3rem;
+    font-size: 2.3rem;
+    font-weight: 200;
     color: rgba($color-black, 0.8);
   }
 }

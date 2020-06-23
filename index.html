@@ -23,7 +23,7 @@
 
   <body>
     <header>
-      <nav>
+      <nav class="nav-shadow">
         <ul class="navigation">
           <li><a href="#"></a>About</li>
           <li><a href="#"></a>Projects</li>
@@ -35,46 +35,52 @@
           </li>
         </ul>
         <div class="navigation__logo-box">
-          <img src="resources/letter-m-5.png" alt="M Logo" />
+          <img src="resources/letter-m-5.png" alt="M Logo" class="clickable-icon" />
         </div>
       </nav>
 
+      <header class="header">
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--small">Hi, my name is</span>
           <span class="heading-primary--main">Martin Klasninovski.</span>
-          <span class="heading-primary--sub"
-            >I am a computer science student based in Ontario, CA
-          </span>
-          <span class="heading-primary--sub"
-            >with an interest in web development.</span
-          >
+          <div class="u-margin-top-small">
+            <span class="heading-primary--sub"
+              >I am a computer science student with an interest in web development, based in Ontario, CA.
+            </span>
+          </div>
         </h1>
-
-        <!-- <a href="#" class="btn btn--white btn--animated">Resume</a> -->
+        <div class="header__icon-box">
+            <li>
+                <a href="https://github.com/mklaso" target="_blank">
+                    <img src="resources/github_mark.png" alt="github icon" class="clickable-icon">
+                </a>
+           </li>
+              <li>
+                <a href="mailto:mklasninovski@gmail.com" target="_blank">
+                    <img src="resources/mail.png" alt="mail icon" class="clickable-icon">
+                </a>
+            </li>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- <div class="main_container">
-        <a href="https://github.com/mklaso" target="_blank">
-          <img
-            src="resources/github_mark.png"
-            height="60"
-            width="60"
-            alt="github icon"
-        /></a>
-        <a href="mailto:mklasninovski@gmail.com" target="_blank">
-          <img src="resources/mail.png" height="60" width="60" alt="mail icon"
-        /></a>
-        <a href="resources/resume.pdf" target="_blank">
-          <img
-            src="resources/resume.png"
-            height="64"
-            width="64"
-            alt="resume icon"
-        /></a>
-      </div> -->
+        <section class="about">
+
+        </section>
+
+        <section class="projects">
+
+        </section>
+
+        <section class="contact">
+
+        </section>
     </main>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
