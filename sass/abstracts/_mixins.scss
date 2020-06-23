@@ -1,0 +1,12 @@
+@mixin style-link-text($color) {
+  text-decoration: none;
+  color: $color;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

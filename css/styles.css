@@ -12,29 +12,34 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
   background-image: url("../resources/rsz_forest.png");
+  background-size: cover;
   /* font-size: 1.6rem; */
   line-height: 1.7;
-  color: grey;
-  padding: 3rem; }
+  color: grey; }
 
 .heading-primary {
   color: #000;
+  padding: 4rem;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
+    font-weight: 800;
     font-size: 6rem;
-    letter-spacing: 0.3rem;
     text-shadow: 2px 2px 2px #aaa;
     color: rgba(0, 0, 0, 0.7); }
   .heading-primary--sub {
     display: block;
-    font-size: 3rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-weight: 300;
     color: rgba(0, 0, 0, 0.6); }
   .heading-primary--small {
     font-size: 2rem;
+    font-weight: 300;
     color: rgba(0, 0, 0, 0.8); }
 
 .heading-secondary {
@@ -42,9 +47,45 @@ body {
   text-transform: uppercase;
   font-weight: 700; }
 
-.main_container {
-  width: 30rem;
-  margin: 0 auto;
-  opacity: 0.9; }
-  .main_container a {
-    padding: 1.5rem; }
+nav {
+  background-color: rgba(169, 169, 179, 0.2); }
+  nav::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.navigation {
+  float: right; }
+  .navigation li {
+    text-decoration: none;
+    color: #292a2d;
+    display: inline-block;
+    padding: 1.3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: 1.5rem;
+    cursor: pointer; }
+    .navigation li:last-child {
+      margin-left: -1rem; }
+  .navigation__logo-box {
+    width: 10rem;
+    text-align: center; }
+    .navigation__logo-box img {
+      margin-top: 1.5rem;
+      height: 4.8rem;
+      opacity: 0.9; }
+
+.btn-resume {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #292a2d;
+  text-decoration: none;
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  border: 1px solid #292a2d;
+  transition: transform 0.5s; }
+  .btn-resume:hover {
+    background-color: #fafafb; }
+  .btn-resume:active {
+    transform: translateY(0.4rem); }
