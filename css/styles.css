@@ -20,7 +20,7 @@ body {
 
 body {
   font-family: "Inter", sans-serif;
-  line-height: 1.5;
+  line-height: 1.2rem;
   color: grey; }
 
 .heading-primary {
@@ -31,27 +31,23 @@ body {
   .heading-primary--main {
     display: block;
     font-weight: 800;
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 7rem;
     text-shadow: 2px 2px 2px #aaa;
     color: rgba(41, 42, 45, 0.85); }
   .heading-primary--sub {
+    margin-top: -1.5rem;
     display: block;
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     margin-left: 0.3rem;
     line-height: 1.2;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.6); }
   .heading-primary--small {
     margin-left: 0.3rem;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 200;
     color: rgba(0, 0, 0, 0.8); }
-
-.heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700; }
 
 .u-margin-top-small {
   margin-top: 2rem; }
@@ -61,7 +57,8 @@ body {
   opacity: 0.8; }
 
 nav {
-  background: linear-gradient(to right, #f3f8fb, #aed4e74f); }
+  background: linear-gradient(to right, #f3f8fb, #aed4e74f);
+  height: 7rem; }
   nav::after {
     content: "";
     clear: both;
@@ -80,17 +77,18 @@ nav {
     color: #292a2d;
     display: inline-block;
     padding: 1.3rem;
-    font-size: 1.8rem;
+    margin-top: 0.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     margin-right: 1.5rem;
     cursor: pointer; }
     .navigation li:last-child {
       margin-left: -1rem; }
   .navigation__logo-box {
-    width: 10rem;
+    max-width: 10rem;
     text-align: center; }
     .navigation__logo-box img {
-      margin-top: 1.5rem; }
+      margin-top: 1rem; }
 
 .btn-resume {
   padding: 1rem;
@@ -109,10 +107,11 @@ nav {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(243, 248, 251, 0.1), rgba(174, 212, 231, 0.3)), url("../../resources/rsz_forest.png");
+  background-image: linear-gradient(to right bottom, rgba(243, 248, 251, 0.3), rgba(174, 212, 231, 0.2)), url("../../resources/rsz_forest.png");
   background-size: cover;
   background-position: top; }
   .header__text-box {
+    margin-top: 1rem;
     position: absolute;
     top: 27%;
     left: 45%;
@@ -121,7 +120,6 @@ nav {
     position: absolute;
     top: 80%;
     left: 25%;
-    margin-top: 1rem;
     transform: translate(-60%, -40%); }
     .header__icon-box li {
       list-style: none;

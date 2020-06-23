@@ -1,6 +1,6 @@
 body {
   font-family: "Inter", sans-serif;
-  line-height: 1.5;
+  line-height: 1.2rem;
   color: grey;
 }
 
@@ -13,15 +13,16 @@ body {
   &--main {
     display: block;
     font-weight: 800;
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 7rem;
     text-shadow: 2px 2px 2px #aaa;
     color: rgba($color-almost-black, 0.85);
   }
 
   &--sub {
+    margin-top: -1.5rem;
     display: block;
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     margin-left: 0.3rem;
     line-height: 1.2;
     font-weight: 500;
@@ -30,14 +31,8 @@ body {
 
   &--small {
     margin-left: 0.3rem;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 200;
     color: rgba($color-black, 0.8);
   }
-}
-
-.heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
 }

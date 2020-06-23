@@ -2,14 +2,15 @@
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-almost-white, 0.1),
-      rgba($color-secondary-light, 0.3)
+      rgba($color-almost-white, 0.3),
+      rgba($color-secondary-light, 0.2)
     ),
     url("../../resources/rsz_forest.png");
   background-size: cover;
   background-position: top;
 
   &__text-box {
+    margin-top: 1rem;
     position: absolute;
     top: 27%;
     left: 45%;
@@ -22,7 +23,6 @@
     position: absolute;
     top: 80%;
     left: 25%;
-    margin-top: 1rem;
     transform: translate(-60%, -40%);
 
     li {
