@@ -1,22 +1,16 @@
 //abstracts
-// @import "abstracts/functions";
-// @import "abstracts/mixins";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
 //base
-@import "base/base";
-// @import "base/animations";
-@import "base/typography";
-@import "base/utilities";
+@import "base";
+@import "typography";
+@import "utilities";
+
+
+@import "header";
 
 //components
-@import "components/icons";
-@import "components/nav-bar";
-@import "components/button";
-
-//layout
-@import "layout/header";
-
-//pages
-@import "pages/home";
+@import "icons";
+@import "nav-bar";
+@import "button";

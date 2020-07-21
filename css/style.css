@@ -52,6 +52,18 @@ body {
 .u-margin-top-small {
   margin-top: 2rem; }
 
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(243, 248, 251, 0.1), rgba(243, 248, 251, 0.3)), url("../resources/forest.jpg");
+  background-size: cover;
+  background-position: top; }
+  .header__text-box {
+    margin-top: 1rem;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -35%); }
+
 .clickable-icon {
   height: 4.8rem;
   opacity: 0.8;
@@ -64,7 +76,7 @@ body {
   opacity: 0.725; }
 
 nav {
-  background: linear-gradient(to right, #f3f8fb, #aed4e74f);
+  background-image: linear-gradient(to right, #f3f8fb, #aed4e74f);
   height: 7rem; }
   nav::after {
     content: "";
@@ -111,24 +123,3 @@ nav {
     background-color: #f3f8fb; }
   .btn-resume:active {
     transform: translateY(0.4rem); }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(243, 248, 251, 0.3), rgba(174, 212, 231, 0.2)), url("../../resources/rsz_forest.png");
-  background-size: cover;
-  background-position: top; }
-  .header__text-box {
-    margin-top: 1rem;
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    transform: translate(-50%, -35%); }
-  .header__icon-box {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-70%, -30%); }
-    .header__icon-box li {
-      list-style: none;
-      display: inline-block;
-      margin-left: 3rem; }

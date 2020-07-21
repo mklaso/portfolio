@@ -1,0 +1,19 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-almost-white, 0.1),
+      rgba($color-almost-white, 0.3)
+    ),
+    url("../resources/forest.jpg"); 
+  background-size: cover;
+  background-position: top;
+
+  &__text-box {
+    margin-top: 1rem;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+  }
+}
