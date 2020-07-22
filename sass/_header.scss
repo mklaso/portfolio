@@ -1,4 +1,24 @@
 .header {
   background-color: $color-primary-dark-1;
   grid-column: full-start / full-end;
+  position: relative;
+
+  // position the site logo top-left header/webpage
+  &__icon-container {
+    background-color: $color-primary-dark-2;
+    width: 8rem;
+    height: 6rem;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transform: translateX(-8rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  &__icon {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
 }

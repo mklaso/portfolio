@@ -23,26 +23,74 @@
 
   <body class="container">
     <div class="sidebar">
-      sidebar
+      <a href="#header">
+        <svg class="sidebar__icon sidebar__icon--home">
+          <use xlink:href="resources/sprite.svg#icon-home"></use>
+        </svg>
+      </a>
+      <div class="sidebar__main-container">
+        <a href="#about">
+          <svg class="sidebar__icon sidebar__icon--profile">
+            <use xlink:href="resources/sprite.svg#icon-user-circle"></use>
+          </svg>
+        </a>
+
+        <a href="#skills">
+          <svg class="sidebar__icon">
+            <use xlink:href="resources/sprite.svg#icon-cog"></use>
+          </svg>
+        </a>
+
+        <a href="#projects">
+          <svg class="sidebar__icon">
+            <use xlink:href="resources/sprite.svg#icon-remove_red_eye"></use>
+          </svg>
+        </a>
+
+        <a href="#contact">
+          <svg class="sidebar__icon sidebar__icon--mail">
+            <use
+              xlink:href="resources/sprite.svg#icon-mail-envelope-closed"
+            ></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="sidebar__sub-container">
+        <a href="https://www.github.com/mklaso" target="_blank">
+          <svg class="sidebar__icon sidebar__icon--github">
+            <use xlink:href="resources/sprite.svg#icon-github"></use>
+          </svg>
+        </a>
+
+        <a href="resources/resume.pdf" target="_blank">
+          <svg class="sidebar__icon">
+            <use xlink:href="resources/sprite.svg#icon-document-text"></use>
+          </svg>
+        </a>
+      </div>
     </div>
 
-    <header class="header">
+    <header class="header" id="header">
+      <div class="header__icon-container">
+        <img src="resources/m-logo.png" alt="Site logo" class="header__icon" />
+      </div>
       header
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
       about
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       skills
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       projects
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       contact
     </section>
 

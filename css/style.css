@@ -21,28 +21,76 @@ body {
 .container {
   display: grid;
   grid-template-rows: 100vh repeat(5, min-content);
-  grid-template-columns: [sidebar-start] 6rem [sidebar-end full-start] minmax(6rem, 1fr) [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end] minmax(6rem, 1fr) [full-end]; }
-  .container > * {
-    padding: 3rem;
-    font-size: 2rem; }
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end] minmax(6rem, 1fr) [full-end]; }
 
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  background-color: #e9f7ff; }
+  background-color: #efecea; }
 
 .u-margin-top-small {
   margin-top: 2rem; }
 
 .sidebar {
-  background-color: #f6f4f3;
-  grid-row: 1 / -1;
-  grid-column: sidebar-start / sidebar-end; }
+  background-color: transparent;
+  grid-row: 1 / 2;
+  grid-column: sidebar-start / sidebar-end;
+  padding: 1.5rem 0;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .sidebar__main-container {
+    display: flex;
+    flex-direction: column; }
+  .sidebar__sub-container {
+    display: flex;
+    flex-direction: column; }
+  .sidebar__icon {
+    width: 100%;
+    height: 2.75rem;
+    fill: #292a2d;
+    transition: all 0.3s; }
+    .sidebar__icon--profile {
+      height: 2.5rem; }
+    .sidebar__icon--mail {
+      height: 3rem; }
+    .sidebar__icon--github {
+      height: 2.5rem; }
+    .sidebar__icon:hover {
+      fill: #666870;
+      transform: scale(1.1); }
+    .sidebar__icon:active {
+      transform: scale(1.1) translateY(2px); }
+    .sidebar__icon:focus {
+      outline: none; }
+
+a {
+  padding: 0.5rem; }
 
 .header {
   background-color: #f1efed;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  position: relative; }
+  .header__icon-container {
+    background-color: #efecea;
+    width: 8rem;
+    height: 6rem;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transform: translateX(-8rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; }
+  .header__icon {
+    width: 3.25rem;
+    height: 3.25rem; }
 
 .about {
   background-color: #c69963;
