@@ -1,38 +1,6 @@
 body {
-  font-family: "Inter", sans-serif;
-  line-height: 1.2rem;
-  color: grey;
-}
-
-.heading-primary {
-  color: $color-black;
-  padding: 2rem 4rem 4rem;
-  backface-visibility: hidden;
-  margin-bottom: 5rem;
-
-  &--main {
-    display: block;
-    font-weight: 800;
-    font-size: 5rem;
-    line-height: 7rem;
-    text-shadow: 2px 2px 2px #aaa;
-    color: rgba($color-almost-black, 0.85);
-  }
-
-  &--sub {
-    margin-top: -1.5rem;
-    display: block;
-    font-size: 2.3rem;
-    margin-left: 0.3rem;
-    line-height: 1.2;
-    font-weight: 500;
-    color: rgba($color-black, 0.6);
-  }
-
-  &--small {
-    margin-left: 0.3rem;
-    font-size: 2rem;
-    font-weight: 200;
-    color: rgba($color-black, 0.8);
-  }
+  font-size: $default-font-size;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background-color: #e9f7ff;
 }

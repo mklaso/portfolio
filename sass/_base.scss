@@ -14,3 +14,17 @@ html {
 body {
   box-sizing: border-box;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(5, min-content);
+  grid-template-columns:
+    [sidebar-start] 6rem [sidebar-end full-start] minmax(6rem, 1fr)
+    [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [content-end] minmax(6rem, 1fr) [full-end];
+
+  & > * {
+    padding: 3rem;
+    font-size: 2rem;
+  }
+}

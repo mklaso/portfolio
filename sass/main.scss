@@ -7,10 +7,11 @@
 @import "typography";
 @import "utilities";
 
-
+//page layout/sections
+@import "sidebar";
 @import "header";
-
-//components
-@import "icons";
-@import "nav-bar";
-@import "button";
+@import "about";
+@import "skills";
+@import "projects";
+@import "contact";
+@import "footer";
