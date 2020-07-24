@@ -32,6 +32,7 @@
     height: 2.75rem;
     fill: lighten($color-almost-black, 7%);
     transition: all 0.4s;
+    backface-visibility: hidden;
 
     &--profile {
       height: 2.5rem;

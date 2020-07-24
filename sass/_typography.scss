@@ -2,7 +2,7 @@ body {
   font-size: $default-font-size;
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  background-color: $test-1; //change later
+  background-color: lighten(#d5e3ec, 5%); //change later
 }
 
 .heading--1 {

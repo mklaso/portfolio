@@ -43,6 +43,7 @@
     height: 4.5rem;
     transition: fill 0.4s;
     animation: up-down 1.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+    backface-visibility: hidden;
 
     &:hover {
       fill: black;
