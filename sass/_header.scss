@@ -2,23 +2,52 @@
   background-color: $color-primary-dark-1;
   grid-column: full-start / full-end;
   position: relative;
+  background-image: url(../resources/snow-2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
   // position the site logo top-left header/webpage
   &__icon-container {
-    background-color: $color-primary-dark-2;
-    width: 8rem;
-    height: 6rem;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    transform: translateX(-8rem);
+    background-color: $test-1;
+
+    //positioning to overlap home icon
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    z-index: 50;
+    top: 2rem;
+    left: 1.5rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
   }
+
   &__icon {
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+.span-first {
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+.span-second {
+  width: 100%;
+}
+
+.letter-highlight {
+  color: $color-primary-dark-2;
+  text-shadow: 2px 2px 20px whitesmoke;
+
+  &-dot {
+    text-shadow: 2px 1px 8px whitesmoke;
   }
 }

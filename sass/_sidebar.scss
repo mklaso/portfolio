@@ -1,12 +1,13 @@
 .sidebar {
-  background-color: transparent;
-  grid-row: 1 / 2;
-  grid-column: sidebar-start / sidebar-end;
+  //   background-color: rgba($test-1, 0.4);
+
   padding: 1.5rem 0;
   z-index: 1;
+  width: 6rem;
+  height: 100vh;
 
   // keep fixed on scroll
-  position: sticky;
+  position: fixed;
   top: 0;
 
   display: flex;
@@ -38,6 +39,7 @@
 
     &--mail {
       height: 3rem;
+      margin-top: -0.5rem;
     }
 
     &--github {

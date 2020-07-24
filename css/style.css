@@ -13,7 +13,8 @@ possible colour variants;
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box; }
@@ -21,24 +22,44 @@ body {
 .container {
   display: grid;
   grid-template-rows: 100vh repeat(5, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end] minmax(6rem, 1fr) [full-end]; }
+
+::selection {
+  background-color: #292a2d;
+  color: white; }
 
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
-  background-color: #efecea; }
+  background-color: #e9f7ff; }
+
+.heading--1 {
+  font-size: 9rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 8px gray;
+  color: rgba(41, 42, 45, 0.85);
+  z-index: 80; }
+
+.intro > span {
+  color: rgba(41, 42, 45, 0.85);
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 2px 2px 8px gray; }
 
 .u-margin-top-small {
   margin-top: 2rem; }
 
+.u-margin-bottom-large {
+  margin-bottom: 10rem; }
+
 .sidebar {
-  background-color: transparent;
-  grid-row: 1 / 2;
-  grid-column: sidebar-start / sidebar-end;
   padding: 1.5rem 0;
   z-index: 1;
-  position: sticky;
+  width: 6rem;
+  height: 100vh;
+  position: fixed;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -58,7 +79,8 @@ body {
     .sidebar__icon--profile {
       height: 2.5rem; }
     .sidebar__icon--mail {
-      height: 3rem; }
+      height: 3rem;
+      margin-top: -0.5rem; }
     .sidebar__icon--github {
       height: 2.5rem; }
     .sidebar__icon:hover {
@@ -75,22 +97,42 @@ a {
 .header {
   background-color: #f1efed;
   grid-column: full-start / full-end;
+  position: relative;
+  background-image: url(../resources/snow-2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative; }
   .header__icon-container {
-    background-color: #efecea;
-    width: 8rem;
-    height: 6rem;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    transform: translateX(-8rem);
+    background-color: #e9f7ff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    z-index: 50;
+    top: 2rem;
+    left: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute; }
   .header__icon {
-    width: 3.25rem;
-    height: 3.25rem; }
+    width: 3.5rem;
+    height: 3.5rem; }
+
+.span-first {
+  margin-left: 0.5rem;
+  position: relative; }
+
+.span-second {
+  width: 100%; }
+
+.letter-highlight {
+  color: #efecea;
+  text-shadow: 2px 2px 20px whitesmoke; }
+  .letter-highlight-dot {
+    text-shadow: 2px 1px 8px whitesmoke; }
 
 .about {
   background-color: #c69963;

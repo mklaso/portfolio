@@ -1,6 +1,28 @@
 body {
   font-size: $default-font-size;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
-  background-color: $color-primary-dark-2; //change later
+  background-color: $test-1; //change later
+}
+
+.heading--1 {
+  font-size: 9rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 8px gray;
+  color: $color-default-text;
+  z-index: 80;
+}
+
+.heading--2 {
+}
+
+.heading--3 {
+}
+
+.intro > span {
+  color: $color-default-text;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 2px 2px 8px gray;
 }
