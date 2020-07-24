@@ -55,6 +55,12 @@
   &__sub-container {
     display: flex;
     flex-direction: column;
+    transition: all 0.3s;
+
+    &--icon:hover {
+      fill: black;
+      transform: scale(1.1);
+    }
   }
 
   // navigation icons/text overlap/hover feature

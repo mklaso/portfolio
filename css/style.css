@@ -90,7 +90,11 @@ body {
     flex-direction: column; }
   .sidebar__sub-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    transition: all 0.3s; }
+    .sidebar__sub-container--icon:hover {
+      fill: black;
+      transform: scale(1.1); }
   .sidebar__info {
     position: relative;
     transition: all 0.8s;
