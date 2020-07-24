@@ -35,14 +35,14 @@ body {
   background-color: #e9f7ff; }
 
 .heading--1 {
-  font-size: 9rem;
+  font-size: 8rem;
   font-weight: 400;
   text-shadow: 2px 2px 8px gray;
   color: rgba(41, 42, 45, 0.85);
   z-index: 80; }
 
 .intro > span {
-  color: rgba(41, 42, 45, 0.85);
+  color: rgba(58, 59, 64, 0.85);
   font-size: 3rem;
   font-weight: 300;
   text-align: center;
@@ -74,8 +74,8 @@ body {
   .sidebar__icon {
     width: 100%;
     height: 2.75rem;
-    fill: #292a2d;
-    transition: all 0.3s; }
+    fill: #3a3b40;
+    transition: all 0.4s; }
     .sidebar__icon--profile {
       height: 2.5rem; }
     .sidebar__icon--mail {
@@ -84,7 +84,7 @@ body {
     .sidebar__icon--github {
       height: 2.5rem; }
     .sidebar__icon:hover {
-      fill: #666870;
+      fill: black;
       transform: scale(1.1); }
     .sidebar__icon:active {
       transform: scale(1.1) translateY(2px); }
@@ -106,7 +106,7 @@ a {
   justify-content: center;
   position: relative; }
   .header__icon-container {
-    background-color: #e9f7ff;
+    background-color: whitesmoke;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -120,6 +120,18 @@ a {
   .header__icon {
     width: 3.5rem;
     height: 3.5rem; }
+  .header__arrow {
+    position: absolute;
+    z-index: 50;
+    bottom: 5%;
+    left: 47.5%;
+    fill: #3b3d41;
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: fill 0.4s;
+    animation: up-down 1.5s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
+    .header__arrow:hover {
+      fill: black; }
 
 .span-first {
   margin-left: 0.5rem;
@@ -133,6 +145,14 @@ a {
   text-shadow: 2px 2px 20px whitesmoke; }
   .letter-highlight-dot {
     text-shadow: 2px 1px 8px whitesmoke; }
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-1rem); }
+  50% {
+    transform: translateY(1rem); }
+  100% {
+    transform: translateY(-1rem); } }
 
 .about {
   background-color: #c69963;

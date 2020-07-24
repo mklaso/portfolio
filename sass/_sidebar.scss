@@ -30,8 +30,8 @@
   &__icon {
     width: 100%;
     height: 2.75rem;
-    fill: $color-almost-black;
-    transition: all 0.3s;
+    fill: lighten($color-almost-black, 7%);
+    transition: all 0.4s;
 
     &--profile {
       height: 2.5rem;
@@ -47,7 +47,7 @@
     }
 
     &:hover {
-      fill: lighten($color-almost-black, 25%);
+      fill: black;
       transform: scale(1.1);
     }
 

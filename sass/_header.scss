@@ -12,9 +12,9 @@
 
   // position the site logo top-left header/webpage
   &__icon-container {
-    background-color: $test-1;
+    background-color: whitesmoke;
 
-    //positioning to overlap home icon
+    // positioning to overlap home icon
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -32,8 +32,25 @@
     width: 3.5rem;
     height: 3.5rem;
   }
+
+  &__arrow {
+    position: absolute;
+    z-index: 50;
+    bottom: 5%;
+    left: 47.5%;
+    fill: lighten($color-almost-black, 7.5%);
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: fill 0.4s;
+    animation: up-down 1.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+
+    &:hover {
+      fill: black;
+    }
+  }
 }
 
+// first line, third line - header text
 .span-first {
   margin-left: 0.5rem;
   position: relative;
@@ -43,11 +60,27 @@
   width: 100%;
 }
 
+// M and period
 .letter-highlight {
   color: $color-primary-dark-2;
   text-shadow: 2px 2px 20px whitesmoke;
 
   &-dot {
     text-shadow: 2px 1px 8px whitesmoke;
+  }
+}
+
+// for the header button
+@keyframes up-down {
+  0% {
+    transform: translateY(-1rem);
+  }
+
+  50% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    transform: translateY(-1rem);
   }
 }

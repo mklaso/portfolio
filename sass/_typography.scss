@@ -6,7 +6,7 @@ body {
 }
 
 .heading--1 {
-  font-size: 9rem;
+  font-size: 8rem;
   font-weight: 400;
   text-shadow: 2px 2px 8px gray;
   color: $color-default-text;
@@ -19,8 +19,9 @@ body {
 .heading--3 {
 }
 
+// heading text
 .intro > span {
-  color: $color-default-text;
+  color: lighten($color-default-text, 7%);
   font-size: 3rem;
   font-weight: 300;
   text-align: center;
