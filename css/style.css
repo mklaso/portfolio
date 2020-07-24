@@ -37,9 +37,16 @@ body {
 .heading--1 {
   font-size: 8rem;
   font-weight: 400;
-  text-shadow: 2px 2px 8px gray;
+  text-shadow: 2px 2px 6px gray;
   color: rgba(41, 42, 45, 0.85);
   z-index: 80; }
+
+.heading--4 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #a9a9b3;
+  text-align: center;
+  text-shadow: 1px 1px 16px gray; }
 
 .intro > span {
   color: rgba(58, 59, 64, 0.85);
@@ -196,5 +203,7 @@ a {
   grid-column: content-start / content-end; }
 
 .footer {
-  background-color: #84a3ff;
-  grid-column: full-start / full-end; }
+  background-color: #292a2d;
+  grid-column: full-start / full-end;
+  padding: 1.5rem 0;
+  border-top: 1px solid whitesmoke; }
