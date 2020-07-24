@@ -55,6 +55,7 @@ body {
   margin-bottom: 10rem; }
 
 .sidebar {
+  background-color: transparent;
   padding: 1.5rem 0;
   z-index: 1;
   width: 6rem;
@@ -65,35 +66,53 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
+  .sidebar__icon {
+    width: 100%;
+    height: 2.75rem;
+    fill: #3a3b40;
+    transition: all 0.4s;
+    backface-visibility: hidden;
+    position: relative; }
+    .sidebar__icon--profile {
+      height: 2.5rem;
+      position: relative; }
+    .sidebar__icon--mail {
+      height: 3rem;
+      margin-top: -0.5rem; }
+    .sidebar__icon--github {
+      height: 2.5rem; }
+    .sidebar__icon:active {
+      transform: scale(1.1) translateY(2px); }
+    .sidebar__icon:focus {
+      outline: none; }
   .sidebar__main-container {
     display: flex;
     flex-direction: column; }
   .sidebar__sub-container {
     display: flex;
     flex-direction: column; }
-  .sidebar__icon {
-    width: 100%;
-    height: 2.75rem;
-    fill: #3a3b40;
-    transition: all 0.4s;
-    backface-visibility: hidden; }
-    .sidebar__icon--profile {
-      height: 2.5rem; }
-    .sidebar__icon--mail {
-      height: 3rem;
-      margin-top: -0.5rem; }
-    .sidebar__icon--github {
-      height: 2.5rem; }
-    .sidebar__icon:hover {
-      fill: black;
-      transform: scale(1.1); }
-    .sidebar__icon:active {
-      transform: scale(1.1) translateY(2px); }
-    .sidebar__icon:focus {
-      outline: none; }
+  .sidebar__info {
+    position: relative;
+    transition: all 0.8s;
+    display: flex; }
+    .sidebar__info--text {
+      position: absolute;
+      bottom: 0;
+      transform: translateX(-0.5rem) translateY(-1.5rem);
+      width: 100%;
+      text-shadow: 1px 1px 4px white;
+      text-align: center;
+      font-size: 1.4rem;
+      opacity: 0; }
+    .sidebar__info:hover .sidebar__info--icon {
+      opacity: 0; }
+    .sidebar__info:hover .sidebar__info--text {
+      opacity: 1; }
 
 a {
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #292a2d; }
 
 .header {
   background-color: #f1efed;

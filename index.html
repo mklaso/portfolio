@@ -20,37 +20,59 @@
   <body class="container">
     <!-- 0. sidebar/site navigation section -->
     <div class="sidebar">
-      <a href="#header">
-        <svg class="sidebar__icon sidebar__icon--home">
-          <use xlink:href="resources/sprite.svg#icon-home"></use>
-        </svg>
-      </a>
+      <div class="sidebar__info">
+        <a href="#header">
+          <svg class="sidebar__icon sidebar__icon--home sidebar__info--icon">
+            <use xlink:href="resources/sprite.svg#icon-home"></use>
+          </svg>
+          <p class="sidebar__info--text">to top</p>
+        </a>
+      </div>
+
       <div class="sidebar__main-container">
-        <a href="#about">
-          <svg class="sidebar__icon sidebar__icon--profile">
-            <use xlink:href="resources/sprite.svg#icon-user-circle"></use>
-          </svg>
-        </a>
+        <div class="sidebar__info">
+          <a href="#about">
+            <svg
+              class="sidebar__icon sidebar__icon--profile sidebar__info--icon"
+            >
+              <use xlink:href="resources/sprite.svg#icon-user-circle"></use>
+            </svg>
+            <p class="sidebar__info--text">about</p>
+          </a>
+        </div>
 
-        <a href="#skills">
-          <svg class="sidebar__icon">
-            <use xlink:href="resources/sprite.svg#icon-cog"></use>
-          </svg>
-        </a>
+        <div class="sidebar__info">
+          <a href="#skills">
+            <svg
+              class="sidebar__icon sidebar__icon--skills sidebar__info--icon"
+            >
+              <use xlink:href="resources/sprite.svg#icon-cog"></use>
+            </svg>
+            <p class="sidebar__info--text">skills</p>
+          </a>
+        </div>
 
-        <a href="#projects">
-          <svg class="sidebar__icon">
-            <use xlink:href="resources/sprite.svg#icon-remove_red_eye"></use>
-          </svg>
-        </a>
+        <div class="sidebar__info">
+          <a href="#projects">
+            <svg
+              class="sidebar__icon sidebar__icon--projects sidebar__info--icon"
+            >
+              <use xlink:href="resources/sprite.svg#icon-remove_red_eye"></use>
+            </svg>
+            <p class="sidebar__info--text">projects</p>
+          </a>
+        </div>
 
-        <a href="#contact">
-          <svg class="sidebar__icon sidebar__icon--mail">
-            <use
-              xlink:href="resources/sprite.svg#icon-mail-envelope-closed"
-            ></use>
-          </svg>
-        </a>
+        <div class="sidebar__info">
+          <a href="#contact">
+            <svg class="sidebar__icon sidebar__icon--mail sidebar__info--icon">
+              <use
+                xlink:href="resources/sprite.svg#icon-mail-envelope-closed"
+              ></use>
+            </svg>
+            <p class="sidebar__info--text">contact</p>
+          </a>
+        </div>
       </div>
 
       <div class="sidebar__sub-container">
