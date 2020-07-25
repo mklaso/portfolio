@@ -1,4 +1,48 @@
 .skills {
-  background-color: $color-yellow;
-  grid-column: content-start / content-end;
+  background-color: lighten(#d5e3ec, 5%);
+  grid-column: full-start / full-end;
+
+  text-align: center;
+  padding: 4rem 0;
+
+  &__whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  &__container {
+    padding: 3rem;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    width: 60vw;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__details {
+    list-style: none;
+    padding: 1rem;
+    width: 10rem;
+
+    &--icon {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &--text {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $color-almost-black;
+    }
+  }
 }

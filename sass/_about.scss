@@ -1,4 +1,9 @@
 .about {
-  background-color: #c69963;
+  background-color: transparent;
   grid-column: content-start / content-end;
+  padding: 4rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
