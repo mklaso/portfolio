@@ -70,6 +70,9 @@ body {
 .u-margin-top-medium {
   margin-top: 3rem; }
 
+.u-margin-bottom-very-small {
+  margin-bottom: 1rem; }
+
 .u-margin-bottom-large {
   margin-bottom: 10rem; }
 
@@ -205,12 +208,40 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .about .heading--2 {
+    position: relative; }
+    .about .heading--2::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 16rem;
+      height: 3rem;
+      position: absolute;
+      background-color: #e0eaf1;
+      box-shadow: 0px 0px 10px #c1d5e2;
+      border-radius: 3px;
+      z-index: -1; }
 
 .skills {
-  background-color: #e7eff4;
+  background-color: #e0eaf1;
   grid-column: full-start / full-end;
   text-align: center;
-  padding: 4rem 0; }
+  padding: 4rem 0;
+  z-index: -2; }
+  .skills .heading--2 {
+    position: relative;
+    display: inline-block; }
+    .skills .heading--2::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 12rem;
+      height: 3rem;
+      position: absolute;
+      background-color: #f8fbfc;
+      box-shadow: 0px 0px 10px #fcfcfc;
+      border-radius: 3px;
+      z-index: -1; }
   .skills__whole {
     display: flex;
     flex-direction: column;
@@ -220,7 +251,7 @@ a {
     padding: 3rem;
     background-color: whitesmoke;
     border-radius: 1rem;
-    width: 60vw; }
+    width: 65vw; }
     .skills__container:not(:last-child) {
       margin-bottom: 2rem; }
   .skills__flex {
@@ -241,11 +272,44 @@ a {
 
 .projects {
   background-color: whitesmoke;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  z-index: -2;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .projects .heading--2 {
+    position: relative; }
+    .projects .heading--2::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 20rem;
+      height: 3rem;
+      position: absolute;
+      background-color: #e0eaf1;
+      box-shadow: 0px 0px 10px #c1d5e2;
+      border-radius: 3px;
+      z-index: -1; }
 
 .contact {
-  background-color: #e7eff4;
-  grid-column: full-start / full-end; }
+  background-color: #e0eaf1;
+  grid-column: full-start / full-end;
+  z-index: -2; }
+  .contact .heading--2 {
+    position: relative;
+    display: inline-block; }
+    .contact .heading--2::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 19rem;
+      height: 2.5rem;
+      position: absolute;
+      background-color: #f8fbfc;
+      box-shadow: 0px 0px 10px #fcfcfc;
+      border-radius: 3px;
+      z-index: -1; }
 
 .footer {
   background-color: #292a2d;

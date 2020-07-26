@@ -1,9 +1,24 @@
 .skills {
-  background-color: lighten(#d5e3ec, 5%);
+  background-color: darken($color-background-2, 2%);
   grid-column: full-start / full-end;
 
   text-align: center;
   padding: 4rem 0;
+  z-index: -2;
+
+  & .heading--2 {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      @include style-after-element(
+        12rem,
+        3rem,
+        darken($color-background-2, 0%),
+        white
+      );
+    }
+  }
 
   &__whole {
     display: flex;
@@ -16,7 +31,7 @@
     padding: 3rem;
     background-color: whitesmoke;
     border-radius: 1rem;
-    width: 60vw;
+    width: 65vw;
 
     &:not(:last-child) {
       margin-bottom: 2rem;

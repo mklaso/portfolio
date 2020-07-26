@@ -2,3 +2,16 @@
   text-decoration: none;
   color: $color;
 }
+
+@mixin style-after-element($width, $height, $bg-color, $bs-color) {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: $width;
+  height: $height;
+  position: absolute;
+  background-color: lighten($bg-color, 5%);
+  box-shadow: 0px 0px 10px darken($bs-color, 1%);
+  border-radius: 3px;
+  z-index: -1;
+}

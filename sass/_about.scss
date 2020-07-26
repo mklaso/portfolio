@@ -6,4 +6,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  & .heading--2 {
+    position: relative;
+    &::after {
+      @include style-after-element(
+        16rem,
+        3rem,
+        darken($color-background-2, 7%),
+        darken($color-background-2, 10%)
+      );
+    }
+  }
 }
