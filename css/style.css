@@ -79,7 +79,7 @@ body {
 .sidebar {
   background-color: transparent;
   padding: 1.5rem 0;
-  z-index: 200;
+  z-index: 15;
   width: 6rem;
   height: 100vh;
   position: fixed;
@@ -213,7 +213,7 @@ a {
     .about .heading--2::after {
       content: "";
       bottom: 0;
-      left: 0;
+      left: -2px;
       width: 16rem;
       height: 3rem;
       position: absolute;
@@ -234,7 +234,7 @@ a {
     .skills .heading--2::after {
       content: "";
       bottom: 0;
-      left: 0;
+      left: -2px;
       width: 12rem;
       height: 3rem;
       position: absolute;
@@ -246,7 +246,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    margin-bottom: 3rem; }
   .skills__container {
     padding: 3rem;
     background-color: whitesmoke;
@@ -283,7 +284,7 @@ a {
     .projects .heading--2::after {
       content: "";
       bottom: 0;
-      left: 0;
+      left: -2px;
       width: 20rem;
       height: 3rem;
       position: absolute;
@@ -307,7 +308,7 @@ a {
     width: 50%; }
   .contact__text {
     align-items: center;
-    margin-left: 6rem; }
+    margin-left: 2rem; }
     .contact__text .heading--2 {
       position: relative;
       margin-right: 16rem;
@@ -315,7 +316,7 @@ a {
       .contact__text .heading--2::after {
         content: "";
         bottom: 0;
-        left: 0;
+        left: -2px;
         width: 19rem;
         height: 3rem;
         position: absolute;
@@ -335,12 +336,15 @@ a {
   .contact__list {
     display: flex;
     list-style: none;
-    margin-top: 2rem; }
+    margin-top: 3rem; }
     .contact__list > li {
       margin-right: 4rem; }
     .contact__list--icon {
-      width: 3rem;
-      height: 3rem; }
+      width: 3.5rem;
+      height: 3.5rem;
+      transition: all 0.4s; }
+      .contact__list--icon:hover {
+        transform: translateY(-2px); }
   .contact__form {
     margin-right: 10rem; }
     .contact__form--input {
@@ -348,9 +352,9 @@ a {
       font-size: 1.6rem;
       font-family: "Inter", sans-serif;
       font-weight: 300;
+      border-radius: 5px;
+      border: 1px solid gray;
       width: 100%; }
-      .contact__form--input:not(:last-child) {
-        margin-bottom: 2rem; }
     .contact__form--label {
       visibility: hidden; }
     .contact__form--submit {
@@ -360,12 +364,16 @@ a {
       font-family: "Inter", sans-serif;
       font-weight: 300;
       border-radius: 5px;
+      margin-top: 2rem;
+      color: #6d6d6d;
       background-color: white;
       border: 1px solid gray;
       cursor: pointer;
       transition: all 0.4s; }
       .contact__form--submit:hover {
         background-color: whitesmoke;
+        color: black;
+        border: 1px solid black;
         transform: scale(1.025); }
 
 .footer {

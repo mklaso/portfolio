@@ -21,7 +21,7 @@
   // text / left side
   &__text {
     align-items: center;
-    margin-left: 6rem;
+    margin-left: 2rem;
 
     & .heading--2 {
       position: relative;
@@ -54,17 +54,23 @@
     }
   }
 
+  //icons list
   &__list {
     display: flex;
     list-style: none;
-    margin-top: 2rem;
+    margin-top: 3rem;
 
     & > li {
       margin-right: 4rem;
     }
     &--icon {
-      width: 3rem;
-      height: 3rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      transition: all 0.4s;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
     }
   }
 
@@ -76,11 +82,9 @@
       font-size: $default-font-size;
       font-family: "Inter", sans-serif;
       font-weight: 300;
+      border-radius: 5px;
+      border: 1px solid gray;
       width: 100%;
-
-      &:not(:last-child) {
-        margin-bottom: 2rem;
-      }
     }
 
     &--label {
@@ -94,6 +98,8 @@
       font-family: "Inter", sans-serif;
       font-weight: 300;
       border-radius: 5px;
+      margin-top: 2rem;
+      color: darken(lightgray, 40%);
       background-color: white;
       border: 1px solid gray;
       cursor: pointer;
@@ -101,6 +107,8 @@
 
       &:hover {
         background-color: whitesmoke;
+        color: black;
+        border: 1px solid black;
         transform: scale(1.025);
       }
     }
