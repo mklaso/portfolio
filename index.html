@@ -264,7 +264,70 @@
 
     <!-- 5. contact me section -->
     <section class="contact" id="contact">
-      <h2 class="heading--2">contact me</h2>
+      <div class="contact__container">
+        <div class="contact__text">
+          <h2 class="heading--2">contact me</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+            tempore commodi excepturi quae, eos cum molestias fugit esse fuga
+            itaque explicabo, dicta similique obcaecati. Necessitatibus,
+            eligendi. Similique sint distinctio minima?
+          </p>
+          <p>
+            contact me at:
+            <span
+              ><a href="mailto:mklasninovski@gmail.com" target="_blank"
+                >mklasninovski@gmail.com</a
+              ></span
+            >
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <svg class="contact__list--icon">
+                <use xlink:href="resources/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="contact__list--icon">
+                <use xlink:href="resources/sprite.svg#icon-github"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact__form">
+          <form action="#">
+            <input
+              type="text"
+              placeholder="name"
+              class="contact__form--input"
+              id="name"
+              required
+            />
+            <label for="name" class="contact__form--label">name</label>
+            <input
+              type="email"
+              placeholder="email address"
+              class="contact__form--input"
+              id="email"
+              required
+            />
+            <label for="email" class="contact__form--label"
+              >email address</label
+            >
+            <textarea
+              name="message"
+              placeholder="message"
+              class="contact__form--input"
+              id="message"
+              required
+            ></textarea>
+
+            <input type="submit" value="submit" class="contact__form--submit" />
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- 6. footer/copyright section -->

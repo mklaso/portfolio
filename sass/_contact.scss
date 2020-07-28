@@ -1,19 +1,108 @@
 .contact {
   background-color: darken($color-background-2, 2%);
   grid-column: full-start / full-end;
-  z-index: -2;
+  z-index: 10;
 
-  & .heading--2 {
-    position: relative;
-    display: inline-block;
+  // whole
+  &__container {
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+  }
 
-    &::after {
-      @include style-after-element(
-        19rem,
-        2.5rem,
-        darken($color-background-2, 0%),
-        white
-      );
+  &__text,
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  // text / left side
+  &__text {
+    align-items: center;
+    margin-left: 6rem;
+
+    & .heading--2 {
+      position: relative;
+      margin-right: 16rem;
+      margin-top: -1rem;
+
+      &::after {
+        @include style-after-element(
+          19rem,
+          3rem,
+          darken($color-background-2, 0%),
+          white
+        );
+      }
+    }
+
+    & > p {
+      margin-top: 2rem;
+      width: 55%;
+      font-size: 1.7rem;
+    }
+
+    & span {
+      box-shadow: inset 0 -10px 0 white;
+      transition: all 0.4s;
+
+      &:hover {
+        box-shadow: inset 0 -20px 0 white;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-top: 2rem;
+
+    & > li {
+      margin-right: 4rem;
+    }
+    &--icon {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  // contact form / right side
+  &__form {
+    margin-right: 10rem;
+    &--input {
+      padding: 1.5rem;
+      font-size: $default-font-size;
+      font-family: "Inter", sans-serif;
+      font-weight: 300;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &--label {
+      visibility: hidden;
+    }
+
+    &--submit {
+      padding: 1rem 2rem;
+      display: block;
+      font-size: $default-font-size;
+      font-family: "Inter", sans-serif;
+      font-weight: 300;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid gray;
+      cursor: pointer;
+      transition: all 0.4s;
+
+      &:hover {
+        background-color: whitesmoke;
+        transform: scale(1.025);
+      }
     }
   }
 }
