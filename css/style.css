@@ -103,6 +103,8 @@ body {
       margin-top: -0.5rem; }
     .sidebar__icon--github {
       height: 2.5rem; }
+    .sidebar__icon--linkedin {
+      height: 2.5rem; }
     .sidebar__icon:active {
       transform: scale(1.1) translateY(2px); }
     .sidebar__icon:focus {
@@ -113,7 +115,8 @@ body {
   .sidebar__sub-container {
     display: flex;
     flex-direction: column;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    transform: translateY(-3rem); }
     .sidebar__sub-container--icon:hover {
       fill: black;
       transform: scale(1.1); }
@@ -221,6 +224,9 @@ a {
       box-shadow: 0px 0px 10px #c1d5e2;
       border-radius: 3px;
       z-index: -1; }
+  .about > p {
+    width: 50%;
+    font-size: 1.8rem; }
 
 .skills {
   background-color: #e0eaf1;
