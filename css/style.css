@@ -229,7 +229,7 @@ a {
     font-size: 1.8rem; }
 
 .skills {
-  background-color: #e0eaf1;
+  background: linear-gradient(whitesmoke, #d8e9f3);
   grid-column: full-start / full-end;
   text-align: center;
   padding: 4rem 0;
@@ -244,8 +244,8 @@ a {
       width: 12rem;
       height: 3rem;
       position: absolute;
-      background-color: #f8fbfc;
-      box-shadow: 0px 0px 10px #fcfcfc;
+      background-color: #e0eaf1;
+      box-shadow: 0px 0px 10px #c1d5e2;
       border-radius: 3px;
       z-index: -1; }
   .skills__whole {
@@ -256,7 +256,7 @@ a {
     margin-bottom: 3rem; }
   .skills__container {
     padding: 3rem;
-    background-color: whitesmoke;
+    background-color: none;
     border-radius: 1rem;
     width: 65vw; }
     .skills__container:not(:last-child) {
@@ -278,7 +278,7 @@ a {
       color: #292a2d; }
 
 .projects {
-  background-color: whitesmoke;
+  background-color: #d8e9f3;
   grid-column: full-start / full-end;
   z-index: -2;
   padding: 4rem 2rem;
@@ -294,13 +294,13 @@ a {
       width: 20rem;
       height: 3rem;
       position: absolute;
-      background-color: #e0eaf1;
-      box-shadow: 0px 0px 10px #c1d5e2;
+      background-color: #f8fbfc;
+      box-shadow: 0px 0px 10px #fcfcfc;
       border-radius: 3px;
       z-index: -1; }
 
 .contact {
-  background-color: #e0eaf1;
+  background: linear-gradient(to top, whitesmoke, #d8e9f3);
   grid-column: full-start / full-end;
   z-index: 10; }
   .contact__container {

@@ -1,5 +1,8 @@
 .skills {
-  background-color: darken($color-background-2, 2%);
+  //   background-color: darken($color-background-2, 2%);
+  background: linear-gradient(rgb(245, 245, 245), rgb(216, 233, 243));
+  //   background: linear-gradient(rgb(245, 245, 245), rgb(207, 223, 233));
+
   grid-column: full-start / full-end;
 
   text-align: center;
@@ -14,8 +17,8 @@
       @include style-after-element(
         12rem,
         3rem,
-        darken($color-background-2, 0%),
-        white
+        darken($color-background-2, 7%),
+        darken($color-background-2, 10%)
       );
     }
   }
@@ -30,7 +33,7 @@
 
   &__container {
     padding: 3rem;
-    background-color: whitesmoke;
+    background-color: none;
     border-radius: 1rem;
     width: 65vw;
 

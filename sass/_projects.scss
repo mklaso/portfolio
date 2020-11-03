@@ -1,5 +1,6 @@
 .projects {
-  background-color: whitesmoke;
+  //   background-color: whitesmoke;
+  background-color: rgb(216, 233, 243);
   grid-column: full-start / full-end;
   z-index: -2;
   padding: 4rem 2rem;
@@ -14,8 +15,8 @@
       @include style-after-element(
         20rem,
         3rem,
-        darken($color-background-2, 7%),
-        darken($color-background-2, 10%)
+        darken($color-background-2, 0%),
+        white
       );
     }
   }
