@@ -321,7 +321,7 @@ a {
       .projects-container__info .heading--5 {
         color: #e6e6f0; }
       .projects-container__info--skills {
-        margin-top: 4rem;
+        margin-top: 2.5rem;
         display: flex;
         width: 100%;
         justify-content: center; }
@@ -337,21 +337,29 @@ a {
         display: flex;
         width: 100%;
         justify-content: center;
-        margin-top: 2rem; }
+        margin-top: 3.5rem; }
         .projects-container__info--links-link-btn {
           background-color: #e6e6f0;
           border: none;
-          border-radius: 5px;
-          padding: 1rem;
+          margin: 0 2rem;
+          text-transform: uppercase;
+          font-weight: 400;
+          color: #292a2d;
+          padding: 0.5rem 1.5rem;
           list-style: none;
-          border: 1px solid gray;
           cursor: pointer;
+          box-shadow: 5px 5px 0 #c8e0ee;
+          position: relative;
+          top: 0;
+          left: 0;
           transition: all 0.4s; }
           .projects-container__info--links-link-btn:hover {
-            background-color: whitesmoke;
-            color: black;
-            border: 1px solid black;
-            transform: scale(1.025); }
+            transform: translate(5px, 5px);
+            box-shadow: 0px 0px 0 #c8e0ee;
+            background-color: #d3d4e4; }
+          .projects-container__info--links-link-btn:active {
+            transform: translate(5px, 8px);
+            box-shadow: 0px 0px 0 #c8e0ee; }
   .projects .heading--2 {
     position: relative; }
     .projects .heading--2::after {
