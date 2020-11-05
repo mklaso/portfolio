@@ -1,5 +1,4 @@
 .projects {
-  //   background-color: whitesmoke;
   background-color: rgb(216, 233, 243);
   grid-column: full-start / full-end;
   z-index: 1;
@@ -11,13 +10,13 @@
 
   &-container {
     background-color: transparent;
-    // height: 50rem;
     width: 80%;
     display: flex;
     align-items: center;
+    margin-top: 7rem;
 
-    & > * {
-      margin-top: 8rem;
+    &--project-1 {
+      margin-top: 5rem;
     }
 
     &__pictures {
@@ -30,8 +29,6 @@
     }
 
     &__info {
-      //   background-color: #d2d2e0;
-      //   background-color: lighten(#d6d7e6, 5%);
       background-color: $color-almost-black;
       border: 1px solid black;
       height: 35rem;
@@ -41,10 +38,6 @@
       flex-direction: column;
       align-items: flex-start;
       border-radius: 5px;
-
-      //   &:nth-child(2n + 1) {
-      //     align-items: flex-end;
-      //   }
 
       & > * {
         margin-top: 2rem;
@@ -108,7 +101,7 @@
           &:hover {
             transform: translate(5px, 5px);
             box-shadow: 0px 0px 0 darken(rgb(216, 233, 243), 4%);
-            background-color: darken(#d6d7e6, 1%);
+            background-color: darken(rgb(216, 233, 243), 4%);
           }
 
           &:active {
