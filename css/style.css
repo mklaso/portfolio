@@ -57,6 +57,11 @@ body {
   text-align: center;
   text-shadow: 1px 1px 16px gray; }
 
+.heading--5 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgba(41, 42, 45, 0.85); }
+
 .intro > span {
   color: rgba(58, 59, 64, 0.85);
   font-size: 3rem;
@@ -280,11 +285,73 @@ a {
 .projects {
   background-color: #d8e9f3;
   grid-column: full-start / full-end;
-  z-index: -2;
+  z-index: 1;
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .projects-container {
+    background-color: transparent;
+    width: 80%;
+    display: flex;
+    align-items: center; }
+    .projects-container > * {
+      margin-top: 8rem; }
+    .projects-container__pictures {
+      background-color: whitesmoke;
+      width: 55%;
+      height: 50rem;
+      border-radius: 5px; }
+    .projects-container__info {
+      background-color: #292a2d;
+      border: 1px solid black;
+      height: 35rem;
+      width: 45%;
+      padding: 2rem 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-radius: 5px; }
+      .projects-container__info > * {
+        margin-top: 2rem; }
+      .projects-container__info .heading--3 {
+        box-shadow: inset 0 -1.2rem 0 #4f4f4f;
+        font-size: 2.6rem;
+        color: #e6e6f0; }
+      .projects-container__info .heading--5 {
+        color: #e6e6f0; }
+      .projects-container__info--skills {
+        margin-top: 4rem;
+        display: flex;
+        width: 100%;
+        justify-content: center; }
+        .projects-container__info--skills-item {
+          list-style: none;
+          padding: 0.5rem 1rem;
+          color: #292a2d;
+          background-color: #e6e6f0;
+          border-radius: 2px; }
+          .projects-container__info--skills-item:not(:last-child) {
+            margin-right: 2rem; }
+      .projects-container__info--links {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 2rem; }
+        .projects-container__info--links-link-btn {
+          background-color: #e6e6f0;
+          border: none;
+          border-radius: 5px;
+          padding: 1rem;
+          list-style: none;
+          border: 1px solid gray;
+          cursor: pointer;
+          transition: all 0.4s; }
+          .projects-container__info--links-link-btn:hover {
+            background-color: whitesmoke;
+            color: black;
+            border: 1px solid black;
+            transform: scale(1.025); }
   .projects .heading--2 {
     position: relative; }
     .projects .heading--2::after {

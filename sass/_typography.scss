@@ -32,6 +32,12 @@ body {
   text-shadow: 1px 1px 16px gray;
 }
 
+.heading--5 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: $color-default-text;
+}
+
 // heading text
 .intro > span {
   color: lighten($color-default-text, 7%);
