@@ -212,10 +212,10 @@ a {
 .about {
   background-color: transparent;
   grid-column: content-start / content-end;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: row;
+  align-items: flex-start; }
   .about .heading--2 {
     position: relative;
     margin-bottom: 6rem; }
@@ -230,31 +230,57 @@ a {
       box-shadow: 0px 0px 10px #c1d5e2;
       border-radius: 3px;
       z-index: -1; }
-  .about > p {
+  .about-text {
+    width: 50vw; }
+    .about-text > p {
+      width: 100%;
+      font-size: 1.8rem; }
+  .about-pictures {
+    margin-left: 2rem;
+    background-color: transparent;
+    height: 100%;
     width: 50%;
-    font-size: 1.8rem; }
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.4s; }
+    .about-pictures > * {
+      border: 3px solid #d8e9f3;
+      border-radius: 2px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 20rem;
+      height: 20rem; }
+    .about-pictures > .about-pictures:hover {
+      z-index: 3000;
+      transform: scale(1.1); }
+    .about-pictures-picture-1 {
+      background-image: url(/resources/snowboard.jpg);
+      position: absolute;
+      margin-top: 4rem; }
+    .about-pictures-picture-2 {
+      background-image: url(/resources/ball.jpg);
+      position: relative;
+      top: 8rem;
+      left: 16rem; }
+    .about-pictures-picture-3 {
+      background-image: url(/resources/code.jpg);
+      background-position: right;
+      position: relative;
+      top: 12rem;
+      left: 12rem; }
 
 .skills {
-  background: linear-gradient(whitesmoke, #d8e9f3);
+  background-color: rgba(216, 233, 243, 0.6);
   grid-column: full-start / full-end;
   text-align: center;
-  padding: 4rem;
+  padding: 8rem 2rem;
   z-index: -2;
   margin-top: 4rem; }
   .skills .heading--2 {
     position: relative;
-    display: inline-block; }
-    .skills .heading--2::after {
-      content: "";
-      bottom: 0;
-      left: -2px;
-      width: 12rem;
-      height: 3rem;
-      position: absolute;
-      background-color: #e0eaf1;
-      box-shadow: 0px 0px 10px #c1d5e2;
-      border-radius: 3px;
-      z-index: -1; }
+    display: inline-block;
+    box-shadow: inset 0 -2.5rem 0 white; }
   .skills__whole {
     display: flex;
     flex-direction: column;
@@ -274,7 +300,7 @@ a {
     list-style: none;
     padding: 2rem;
     width: 10rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -289,9 +315,10 @@ a {
 
 .projects {
   background-color: #d8e9f3;
+  background-color: whitesmoke;
   grid-column: full-start / full-end;
   z-index: 1;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -300,14 +327,15 @@ a {
     width: 80%;
     display: flex;
     align-items: center;
-    margin-top: 7rem; }
+    margin-top: 12rem; }
     .projects-container--project-1 {
       margin-top: 5rem; }
     .projects-container__pictures {
       background-color: whitesmoke;
       width: 60rem;
       height: 50rem;
-      border-radius: 5px; }
+      border-radius: 5px;
+      border: 1px solid gray; }
       .projects-container__pictures-1, .projects-container__pictures-2, .projects-container__pictures-3, .projects-container__pictures-4 {
         background-position: 50% 50%;
         background-repeat: no-repeat;
@@ -387,13 +415,13 @@ a {
       width: 20rem;
       height: 3rem;
       position: absolute;
-      background-color: #f8fbfc;
-      box-shadow: 0px 0px 10px #fcfcfc;
+      background-color: #e0eaf1;
+      box-shadow: 0px 0px 10px #c1d5e2;
       border-radius: 3px;
       z-index: -1; }
 
 .contact {
-  background: linear-gradient(to top, whitesmoke, #d8e9f3);
+  background: linear-gradient(to top, #d8e9f3, whitesmoke);
   grid-column: full-start / full-end;
   z-index: 10; }
   .contact__container {
@@ -419,8 +447,8 @@ a {
         width: 19rem;
         height: 3rem;
         position: absolute;
-        background-color: #f8fbfc;
-        box-shadow: 0px 0px 10px #fcfcfc;
+        background-color: #e0eaf1;
+        box-shadow: 0px 0px 10px #c1d5e2;
         border-radius: 3px;
         z-index: -1; }
     .contact__text > p {

@@ -1,7 +1,7 @@
 .contact {
   //   background-color: darken($color-background-2, 2%);
   //   background: linear-gradient(rgb(245, 245, 245), rgb(216, 233, 243));
-  background: linear-gradient(to top, rgb(245, 245, 245), rgb(216, 233, 243));
+  background: linear-gradient(to top, rgb(216, 233, 243), rgb(245, 245, 245));
 
   grid-column: full-start / full-end;
   z-index: 10;
@@ -35,8 +35,8 @@
         @include style-after-element(
           19rem,
           3rem,
-          darken($color-background-2, 0%),
-          white
+          darken($color-background-2, 7%),
+          darken($color-background-2, 10%)
         );
       }
     }

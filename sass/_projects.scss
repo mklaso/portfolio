@@ -1,8 +1,14 @@
 .projects {
   background-color: rgb(216, 233, 243);
+  background-color: rgb(245, 245, 245);
+  //   background: linear-gradient(
+  //     to bottom,
+  //     rgb(216, 233, 243),
+  //     rgb(245, 245, 245)
+  //   );
   grid-column: full-start / full-end;
   z-index: 1;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
 
   display: flex;
   flex-direction: column;
@@ -13,7 +19,7 @@
     width: 80%;
     display: flex;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 12rem;
 
     &--project-1 {
       margin-top: 5rem;
@@ -24,6 +30,7 @@
       width: 60rem;
       height: 50rem;
       border-radius: 5px;
+      border: 1px solid gray;
 
       &-1,
       &-2,
@@ -144,8 +151,8 @@
       @include style-after-element(
         20rem,
         3rem,
-        darken($color-background-2, 0%),
-        white
+        darken($color-background-2, 7%),
+        darken($color-background-2, 10%)
       );
     }
   }

@@ -1,11 +1,11 @@
 .about {
   background-color: transparent;
   grid-column: content-start / content-end;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
 
   & .heading--2 {
     position: relative;
@@ -20,8 +20,57 @@
     margin-bottom: 6rem;
   }
 
-  & > p {
+  &-text {
+    & > p {
+      width: 100%;
+      font-size: 1.8rem;
+    }
+    width: 50vw;
+  }
+
+  &-pictures {
+    margin-left: 2rem;
+    background-color: transparent;
+    height: 100%;
     width: 50%;
-    font-size: 1.8rem;
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.4s;
+
+    & > * {
+      border: 3px solid rgb(216, 233, 243);
+      border-radius: 2px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 20rem;
+      height: 20rem;
+    }
+
+    & > &:hover {
+      z-index: 3000;
+      transform: scale(1.1);
+    }
+
+    &-picture-1 {
+      background-image: url(/resources/snowboard.jpg);
+      position: absolute;
+      margin-top: 4rem;
+    }
+
+    &-picture-2 {
+      background-image: url(/resources/ball.jpg);
+      position: relative;
+      top: 8rem;
+      left: 16rem;
+    }
+
+    &-picture-3 {
+      background-image: url(/resources/code.jpg);
+      background-position: right;
+      position: relative;
+      top: 12rem;
+      left: 12rem;
+    }
   }
 }
