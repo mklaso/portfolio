@@ -305,9 +305,21 @@ a {
       margin-top: 5rem; }
     .projects-container__pictures {
       background-color: whitesmoke;
-      width: 55%;
+      width: 60rem;
       height: 50rem;
       border-radius: 5px; }
+      .projects-container__pictures-1, .projects-container__pictures-2, .projects-container__pictures-3, .projects-container__pictures-4 {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .projects-container__pictures-1 {
+        background-image: url(/resources/project-weather.png); }
+      .projects-container__pictures-2 {
+        background-image: url(/resources/project-sujoku.png); }
+      .projects-container__pictures-3 {
+        background-image: url(/resources/project-othello.png); }
+      .projects-container__pictures-4 {
+        background-image: url(/resources/project-face.png); }
     .projects-container__info {
       background-color: #292a2d;
       border: 1px solid black;
@@ -321,7 +333,7 @@ a {
       .projects-container__info > * {
         margin-top: 2rem; }
       .projects-container__info .heading--3 {
-        box-shadow: inset 0 -1.2rem 0 #4f4f4f;
+        box-shadow: inset 0 -1.2rem 0 rgba(216, 233, 243, 0.2);
         font-size: 2.6rem;
         color: #e6e6f0; }
       .projects-container__info .heading--5 {

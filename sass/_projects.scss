@@ -21,9 +21,34 @@
 
     &__pictures {
       background-color: whitesmoke;
-      width: 55%;
+      width: 60rem;
       height: 50rem;
       border-radius: 5px;
+
+      &-1,
+      &-2,
+      &-3,
+      &-4 {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &-1 {
+        background-image: url(/resources/project-weather.png);
+      }
+
+      &-2 {
+        background-image: url(/resources/project-sujoku.png);
+      }
+
+      &-3 {
+        background-image: url(/resources/project-othello.png);
+      }
+
+      &-4 {
+        background-image: url(/resources/project-face.png);
+      }
       //   border: 1px solid white;
       //   margin: 0 1rem;
     }
@@ -44,7 +69,7 @@
       }
 
       & .heading--3 {
-        box-shadow: inset 0 -1.2rem 0 #4f4f4f;
+        box-shadow: inset 0 -1.2rem 0 rgba(216, 233, 243, 0.2);
         font-size: 2.6rem;
         color: lighten(#d6d7e6, 5%);
       }
