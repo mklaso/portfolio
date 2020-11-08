@@ -3,10 +3,6 @@
   grid-column: content-start / content-end;
   padding: 8rem 2rem;
 
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-
   & .heading--2 {
     position: relative;
     &::after {
@@ -17,60 +13,66 @@
         darken($color-background-2, 10%)
       );
     }
-    margin-bottom: 6rem;
   }
 
-  &-text {
-    & > p {
-      width: 100%;
-      font-size: 1.8rem;
-    }
-    width: 50vw;
-  }
-
-  &-pictures {
-    margin-left: 2rem;
-    background-color: transparent;
-    height: 100%;
-    width: 50%;
+  .about-container {
     display: flex;
     align-items: flex-start;
-    transition: all 0.4s;
 
-    & > * {
-      border: 3px solid rgb(216, 233, 243);
-      border-radius: 2px;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 20rem;
-      height: 20rem;
+    &--text {
+      & > p {
+        width: 100%;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+      }
+      width: 50vw;
     }
+    margin-bottom: 2rem;
 
-    & > &:hover {
-      z-index: 3000;
-      transform: scale(1.1);
-    }
+    &--pictures {
+      margin-left: 2rem;
+      background-color: transparent;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      transition: all 0.4s;
 
-    &-picture-1 {
-      background-image: url(/resources/snowboard.jpg);
-      position: absolute;
-      margin-top: 4rem;
-    }
+      & > * {
+        border: 3px solid rgb(216, 233, 243);
+        border-radius: 2px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20rem;
+        height: 20rem;
 
-    &-picture-2 {
-      background-image: url(/resources/ball.jpg);
-      position: relative;
-      top: 8rem;
-      left: 16rem;
-    }
+        &:hover {
+          z-index: 3000;
+          transform: scale(1.1);
+        }
+      }
 
-    &-picture-3 {
-      background-image: url(/resources/code.jpg);
-      background-position: right;
-      position: relative;
-      top: 12rem;
-      left: 12rem;
+      &-picture-1 {
+        background-image: url(/resources/snowboard.jpg);
+        position: absolute;
+        margin-top: -2rem;
+      }
+
+      &-picture-2 {
+        background-image: url(/resources/ball.jpg);
+        position: relative;
+        top: 2rem;
+        left: 16rem;
+      }
+
+      &-picture-3 {
+        background-image: url(/resources/code.jpg);
+        background-position: right;
+        position: relative;
+        top: 6rem;
+        left: 12rem;
+      }
     }
   }
 }

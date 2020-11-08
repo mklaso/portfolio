@@ -1,11 +1,5 @@
 .projects {
-  background-color: rgb(216, 233, 243);
   background-color: rgb(245, 245, 245);
-  //   background: linear-gradient(
-  //     to bottom,
-  //     rgb(216, 233, 243),
-  //     rgb(245, 245, 245)
-  //   );
   grid-column: full-start / full-end;
   z-index: 1;
   padding: 8rem 2rem;
@@ -29,8 +23,7 @@
       background-color: whitesmoke;
       width: 60rem;
       height: 50rem;
-      border-radius: 5px;
-      border: 1px solid gray;
+      border: 1px solid $color-almost-black;
 
       &-1,
       &-2,
@@ -56,8 +49,6 @@
       &-4 {
         background-image: url(/resources/project-face.png);
       }
-      //   border: 1px solid white;
-      //   margin: 0 1rem;
     }
 
     &__info {
@@ -69,7 +60,6 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      border-radius: 5px;
 
       & > * {
         margin-top: 2rem;
@@ -87,9 +77,6 @@
 
       &--skills {
         margin-top: 2.5rem;
-        // display: flex;
-        // justify-content: center;
-        // width: 100%;
         display: flex;
         width: 100%;
         justify-content: center;
@@ -107,6 +94,13 @@
         }
       }
 
+      &:nth-child(2n) {
+        box-shadow: 10px -10px 0 darken(rgb(216, 233, 243), 4%);
+        margin-left: 0.75rem;
+      }
+      margin-right: 0.75rem;
+      box-shadow: -10px -10px 0 lighten(#8b55ce, 30%);
+
       &--links {
         display: flex;
         width: 100%;
@@ -120,11 +114,10 @@
           text-transform: uppercase;
           font-weight: 400;
           color: $color-almost-black;
-          //   border-radius: 5px;
           padding: 0.5rem 1.5rem;
           list-style: none;
           cursor: pointer;
-          box-shadow: 5px 5px 0 darken(rgb(216, 233, 243), 4%);
+          box-shadow: 5px 5px 0 lighten(#8b55ce, 25%);
           position: relative;
           top: 0;
           left: 0;
@@ -132,13 +125,26 @@
 
           &:hover {
             transform: translate(5px, 5px);
-            box-shadow: 0px 0px 0 darken(rgb(216, 233, 243), 4%);
-            background-color: darken(rgb(216, 233, 243), 4%);
+            background-color: lighten(#8b55ce, 25%);
+            box-shadow: 0px 0px 0 lighten(#8b55ce, 25%);
           }
 
           &:active {
             transform: translate(5px, 8px);
-            box-shadow: 0px 0px 0 darken(rgb(216, 233, 243), 4%);
+          }
+        }
+
+        &-link-btn-even {
+          box-shadow: -5px 5px 0 darken(rgb(216, 233, 243), 11%);
+
+          &:hover {
+            transform: translate(-5px, 5px);
+            box-shadow: 0px 0px 0 darken(rgb(216, 233, 243), 6%);
+            background-color: darken(rgb(216, 233, 243), 4%);
+          }
+
+          &:active {
+            transform: translate(-5px, 8px);
           }
         }
       }

@@ -212,13 +212,9 @@ a {
 .about {
   background-color: transparent;
   grid-column: content-start / content-end;
-  padding: 8rem 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start; }
+  padding: 8rem 2rem; }
   .about .heading--2 {
-    position: relative;
-    margin-bottom: 6rem; }
+    position: relative; }
     .about .heading--2::after {
       content: "";
       bottom: 0;
@@ -230,53 +226,57 @@ a {
       box-shadow: 0px 0px 10px #c1d5e2;
       border-radius: 3px;
       z-index: -1; }
-  .about-text {
-    width: 50vw; }
-    .about-text > p {
-      width: 100%;
-      font-size: 1.8rem; }
-  .about-pictures {
-    margin-left: 2rem;
-    background-color: transparent;
-    height: 100%;
-    width: 50%;
+  .about .about-container {
     display: flex;
     align-items: flex-start;
-    transition: all 0.4s; }
-    .about-pictures > * {
-      border: 3px solid #d8e9f3;
-      border-radius: 2px;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 20rem;
-      height: 20rem; }
-    .about-pictures > .about-pictures:hover {
-      z-index: 3000;
-      transform: scale(1.1); }
-    .about-pictures-picture-1 {
-      background-image: url(/resources/snowboard.jpg);
-      position: absolute;
-      margin-top: 4rem; }
-    .about-pictures-picture-2 {
-      background-image: url(/resources/ball.jpg);
-      position: relative;
-      top: 8rem;
-      left: 16rem; }
-    .about-pictures-picture-3 {
-      background-image: url(/resources/code.jpg);
-      background-position: right;
-      position: relative;
-      top: 12rem;
-      left: 12rem; }
+    margin-bottom: 2rem; }
+    .about .about-container--text {
+      width: 50vw; }
+      .about .about-container--text > p {
+        width: 100%;
+        font-size: 1.8rem;
+        margin-top: 2rem; }
+    .about .about-container--pictures {
+      margin-left: 2rem;
+      background-color: transparent;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      transition: all 0.4s; }
+      .about .about-container--pictures > * {
+        border: 3px solid #d8e9f3;
+        border-radius: 2px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20rem;
+        height: 20rem; }
+        .about .about-container--pictures > *:hover {
+          z-index: 3000;
+          transform: scale(1.1); }
+      .about .about-container--pictures-picture-1 {
+        background-image: url(/resources/snowboard.jpg);
+        position: absolute;
+        margin-top: -2rem; }
+      .about .about-container--pictures-picture-2 {
+        background-image: url(/resources/ball.jpg);
+        position: relative;
+        top: 2rem;
+        left: 16rem; }
+      .about .about-container--pictures-picture-3 {
+        background-image: url(/resources/code.jpg);
+        background-position: right;
+        position: relative;
+        top: 6rem;
+        left: 12rem; }
 
 .skills {
   background-color: rgba(216, 233, 243, 0.6);
   grid-column: full-start / full-end;
   text-align: center;
   padding: 8rem 2rem;
-  z-index: -2;
-  margin-top: 4rem; }
+  z-index: -2; }
   .skills .heading--2 {
     position: relative;
     display: inline-block;
@@ -284,7 +284,8 @@ a {
   .skills__whole {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: -2rem; }
   .skills__container {
     padding: 3rem;
     background-color: none;
@@ -300,10 +301,10 @@ a {
     list-style: none;
     padding: 2rem;
     width: 10rem;
-    margin-right: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: -2rem; }
     .skills__details--icon {
       width: 7rem;
       height: 7rem; }
@@ -314,7 +315,6 @@ a {
       color: #292a2d; }
 
 .projects {
-  background-color: #d8e9f3;
   background-color: whitesmoke;
   grid-column: full-start / full-end;
   z-index: 1;
@@ -334,8 +334,7 @@ a {
       background-color: whitesmoke;
       width: 60rem;
       height: 50rem;
-      border-radius: 5px;
-      border: 1px solid gray; }
+      border: 1px solid #292a2d; }
       .projects-container__pictures-1, .projects-container__pictures-2, .projects-container__pictures-3, .projects-container__pictures-4 {
         background-position: 50% 50%;
         background-repeat: no-repeat;
@@ -357,7 +356,8 @@ a {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      border-radius: 5px; }
+      margin-right: 0.75rem;
+      box-shadow: -10px -10px 0 #dcccf0; }
       .projects-container__info > * {
         margin-top: 2rem; }
       .projects-container__info .heading--3 {
@@ -379,6 +379,9 @@ a {
           border-radius: 2px; }
           .projects-container__info--skills-item:not(:last-child) {
             margin-right: 2rem; }
+      .projects-container__info:nth-child(2n) {
+        box-shadow: 10px -10px 0 #c8e0ee;
+        margin-left: 0.75rem; }
       .projects-container__info--links {
         display: flex;
         width: 100%;
@@ -394,18 +397,25 @@ a {
           padding: 0.5rem 1.5rem;
           list-style: none;
           cursor: pointer;
-          box-shadow: 5px 5px 0 #c8e0ee;
+          box-shadow: 5px 5px 0 #cfb8eb;
           position: relative;
           top: 0;
           left: 0;
           transition: all 0.4s; }
           .projects-container__info--links-link-btn:hover {
             transform: translate(5px, 5px);
-            box-shadow: 0px 0px 0 #c8e0ee;
-            background-color: #c8e0ee; }
+            background-color: #cfb8eb;
+            box-shadow: 0px 0px 0 #cfb8eb; }
           .projects-container__info--links-link-btn:active {
-            transform: translate(5px, 8px);
-            box-shadow: 0px 0px 0 #c8e0ee; }
+            transform: translate(5px, 8px); }
+        .projects-container__info--links-link-btn-even {
+          box-shadow: -5px 5px 0 #add1e6; }
+          .projects-container__info--links-link-btn-even:hover {
+            transform: translate(-5px, 5px);
+            box-shadow: 0px 0px 0 #c1dcec;
+            background-color: #c8e0ee; }
+          .projects-container__info--links-link-btn-even:active {
+            transform: translate(-5px, 8px); }
   .projects .heading--2 {
     position: relative; }
     .projects .heading--2::after {
@@ -427,7 +437,7 @@ a {
   .contact__container {
     display: flex;
     justify-content: center;
-    padding: 12rem 6rem; }
+    padding: 8rem 6rem; }
   .contact__text, .contact__form {
     display: flex;
     flex-direction: column;
