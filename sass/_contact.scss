@@ -18,13 +18,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
   }
 
   // text / left side
   &__text {
-    align-items: center;
+    align-items: flex-start;
     margin-left: 2rem;
+    margin-right: 0;
 
     & .heading--2 {
       position: relative;
@@ -43,7 +44,7 @@
 
     & > p {
       margin-top: 2rem;
-      width: 55%;
+      width: 75%;
       font-size: 1.7rem;
     }
 

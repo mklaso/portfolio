@@ -1,6 +1,4 @@
 .skills {
-  //   background-color: darken($color-background-2, 2%);
-  //   background: linear-gradient(rgb(245, 245, 245), rgb(207, 223, 233));
   background-color: rgba(216, 233, 243, 0.6);
 
   grid-column: full-start / full-end;
@@ -8,21 +6,11 @@
   text-align: center;
   padding: 8rem 2rem;
   z-index: -2;
-  //   margin-top: 4rem;
 
   & .heading--2 {
     position: relative;
     display: inline-block;
     box-shadow: inset 0 -2.5rem 0 white;
-
-    // &::after {
-    //   @include style-after-element(
-    //     12rem,
-    //     3rem,
-    //     darken($color-background-2, 7%),
-    //     darken($color-background-2, 10%)
-    //   );
-    // }
   }
 
   &__whole {
@@ -37,6 +25,10 @@
     background-color: none;
     border-radius: 1rem;
     width: 65vw;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 3rem 0;
+    }
 
     &:not(:last-child) {
       margin-bottom: 2rem;
@@ -69,6 +61,10 @@
       font-size: 1.5rem;
       font-weight: 300;
       color: $color-almost-black;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 1.7rem;
+      }
     }
   }
 }

@@ -19,6 +19,15 @@
     display: flex;
     align-items: flex-start;
 
+    @media only screen and (max-width: $bp-large) {
+      align-items: center;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     &--text {
       & > p {
         width: 100%;
@@ -26,6 +35,10 @@
         margin-top: 2rem;
       }
       width: 50vw;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+      }
     }
     margin-bottom: 2rem;
 
@@ -38,14 +51,34 @@
       align-items: flex-start;
       transition: all 0.4s;
 
+      @media only screen and (max-width: $bp-large) {
+        margin-top: -4rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.5rem;
+        margin-left: 0;
+      }
+
       & > * {
         border: 3px solid rgb(216, 233, 243);
         border-radius: 2px;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 20rem;
-        height: 20rem;
+        width: 18rem;
+        height: 18rem;
+
+        @media only screen and (max-width: $bp-large) {
+          width: 16rem;
+          height: 16rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+        }
 
         &:hover {
           z-index: 3000;
@@ -56,7 +89,10 @@
       &-picture-1 {
         background-image: url(/resources/snowboard.jpg);
         position: absolute;
-        margin-top: -2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+          position: relative;
+        }
       }
 
       &-picture-2 {
@@ -64,14 +100,34 @@
         position: relative;
         top: 2rem;
         left: 16rem;
+
+        @media only screen and (max-width: $bp-large) {
+          left: 12rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          left: 0;
+          top: 0;
+          margin-left: 4rem;
+          margin-right: 4rem;
+        }
       }
 
       &-picture-3 {
         background-image: url(/resources/code.jpg);
         background-position: right;
         position: relative;
-        top: 6rem;
+        top: 4rem;
         left: 12rem;
+
+        @media only screen and (max-width: $bp-large) {
+          left: 6rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          left: 0;
+          top: 0;
+        }
       }
     }
   }
