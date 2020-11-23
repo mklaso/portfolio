@@ -4,8 +4,16 @@
   grid-column: full-start / full-end;
 
   text-align: center;
-  padding: 8rem 2rem;
+  padding: 8rem 12rem;
   z-index: -2;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 8rem 12rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 8rem 0;
+  }
 
   & .heading--2 {
     position: relative;
@@ -21,14 +29,10 @@
   }
 
   &__container {
-    padding: 3rem;
+    padding: 3rem 0;
     background-color: none;
     border-radius: 1rem;
-    width: 65vw;
-
-    @media only screen and (max-width: $bp-medium) {
-      padding: 3rem 0;
-    }
+    width: 100%;
 
     &:not(:last-child) {
       margin-bottom: 2rem;
@@ -43,27 +47,43 @@
 
   &__details {
     list-style: none;
-    padding: 2rem;
-    width: 10rem;
-    // margin-right: 2rem;
+    padding: 0 1rem;
+    flex: 0 0 14.285%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: -2rem;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 25%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex: 0 0 33.333333%;
+    }
 
     &--icon {
       width: 7rem;
       height: 7rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        width: 8rem;
+        height: 8rem;
+      }
     }
 
     &--text {
       margin-top: 1rem;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       font-weight: 300;
       color: $color-almost-black;
 
       @media only screen and (max-width: $bp-largest) {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.9rem;
       }
     }
   }

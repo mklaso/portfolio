@@ -3,8 +3,18 @@
   grid-column: content-start / content-end;
   padding: 8rem 2rem;
 
+  @media only screen and (max-width: $bp-large) {
+    padding: 8rem 4rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 8rem 2rem;
+  }
+
   & .heading--2 {
     position: relative;
+    display: inline-block;
+
     &::after {
       @include style-after-element(
         16rem,
@@ -12,6 +22,14 @@
         darken($color-background-2, 7%),
         darken($color-background-2, 10%)
       );
+      @media only screen and (max-width: $bp-largest) {
+        @include style-after-element(
+          18.5rem,
+          3rem,
+          darken($color-background-2, 7%),
+          darken($color-background-2, 10%)
+        );
+      }
     }
   }
 
@@ -25,7 +43,6 @@
 
     @media only screen and (max-width: $bp-medium) {
       flex-direction: column;
-      align-items: center;
     }
 
     &--text {
@@ -33,11 +50,27 @@
         width: 100%;
         font-size: 1.8rem;
         margin-top: 2rem;
+
+        @media only screen and (max-width: $bp-largest) {
+          font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+          font-size: 2rem;
+        }
       }
       width: 50vw;
 
       @media only screen and (max-width: $bp-medium) {
         width: 100%;
+        & > p {
+          font-size: 2rem;
+        }
+      }
+      @media only screen and (max-width: $bp-small) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
       }
     }
     margin-bottom: 2rem;
@@ -50,9 +83,11 @@
       display: flex;
       align-items: flex-start;
       transition: all 0.4s;
+      margin-top: 2rem;
 
       @media only screen and (max-width: $bp-large) {
         margin-top: -4rem;
+        margin-left: 1rem;
       }
 
       @media only screen and (max-width: $bp-medium) {
@@ -72,12 +107,9 @@
         width: 18rem;
         height: 18rem;
 
-        @media only screen and (max-width: $bp-large) {
+        @media only screen and (max-width: $bp-medium) {
           width: 16rem;
           height: 16rem;
-        }
-
-        @media only screen and (max-width: $bp-medium) {
         }
 
         &:hover {
@@ -101,8 +133,9 @@
         top: 2rem;
         left: 16rem;
 
-        @media only screen and (max-width: $bp-large) {
+        @media only screen and (max-width: $bp-largest) {
           left: 12rem;
+          top: 4rem;
         }
 
         @media only screen and (max-width: $bp-medium) {
@@ -120,8 +153,9 @@
         top: 4rem;
         left: 12rem;
 
-        @media only screen and (max-width: $bp-large) {
+        @media only screen and (max-width: $bp-largest) {
           left: 6rem;
+          top: 8rem;
         }
 
         @media only screen and (max-width: $bp-medium) {

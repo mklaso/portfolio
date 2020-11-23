@@ -11,6 +11,15 @@
     display: flex;
     justify-content: center;
     padding: 8rem 6rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 8rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      margin-left: 2rem;
+    }
   }
 
   &__text,
@@ -24,8 +33,11 @@
   // text / left side
   &__text {
     align-items: flex-start;
-    margin-left: 2rem;
+    margin-left: 10rem;
     margin-right: 0;
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 0;
+    }
 
     & .heading--2 {
       position: relative;
@@ -39,6 +51,15 @@
           darken($color-background-2, 7%),
           darken($color-background-2, 10%)
         );
+
+        @media only screen and (max-width: $bp-largest) {
+          @include style-after-element(
+            22rem,
+            3rem,
+            darken($color-background-2, 7%),
+            darken($color-background-2, 10%)
+          );
+        }
       }
     }
 
@@ -46,6 +67,14 @@
       margin-top: 2rem;
       width: 75%;
       font-size: 1.7rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 95%;
+      }
     }
 
     & span {
@@ -81,6 +110,10 @@
   // contact form / right side
   &__form {
     margin-right: 10rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 6rem;
+    }
     &--input {
       padding: 1.5rem;
       font-size: $default-font-size;
@@ -89,6 +122,14 @@
       border-radius: 5px;
       border: 1px solid gray;
       width: 100%;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 1.8rem;
+      }
+    }
+
+    textarea {
+      height: 15rem;
     }
 
     &--label {
@@ -108,6 +149,10 @@
       border: 1px solid gray;
       cursor: pointer;
       transition: all 0.4s;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 1.8rem;
+      }
 
       &:hover {
         background-color: whitesmoke;

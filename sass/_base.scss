@@ -32,9 +32,9 @@ body {
 
   //without initial sidebar column
   grid-template-columns:
-    [full-start] minmax(6rem, 1fr)
+    [full-start] minmax(min-content, 1fr)
     [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
-    [content-end] minmax(6rem, 1fr) [full-end];
+    [content-end] minmax(min-content, 1fr) [full-end];
 }
 
 ::selection {

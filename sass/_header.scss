@@ -7,8 +7,24 @@
   background-position: center;
   display: flex;
   align-items: center;
+
   justify-content: center;
   position: relative;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    // heading text
+    & > span {
+      color: lighten($color-default-text, 7%);
+      font-size: 3rem;
+      font-weight: 300;
+      text-shadow: 2px 2px 8px gray;
+      width: 100%;
+    }
+  }
 
   // position the site logo top-left header/webpage
   &__icon-container {
@@ -26,6 +42,12 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
   }
 
   &__icon {
@@ -58,7 +80,7 @@
 }
 
 .span-second {
-  width: 100%;
+  text-transform: lowercase;
 }
 
 // M and period
