@@ -15,6 +15,10 @@
     padding: 8rem 0;
   }
 
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem 0;
+  }
+
   & .heading--2 {
     position: relative;
     display: inline-block;

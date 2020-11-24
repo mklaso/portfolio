@@ -17,6 +17,7 @@
   @media only screen and (max-width: $bp-large) {
     height: 0vh;
     width: 0;
+    pointer-events: none;
   }
 
   &__icon {
