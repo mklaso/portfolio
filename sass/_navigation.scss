@@ -1,161 +1,210 @@
-// .navigation {
-//   &__checkbox {
-//     display: none;
-//   }
+.navigation {
+  grid-row: -1 / -1;
+  opacity: 0;
+  pointer-events: none;
 
-//   &__button {
-//     background-color: $color-white;
-//     height: 7rem;
-//     width: 7rem;
-//     position: fixed;
-//     top: 6rem;
-//     right: 6rem;
-//     border-radius: 50%;
-//     z-index: 2600;
-//     box-shadow: 0 1 rem 3rem rgba($color-black, 0.2);
-//     text-align: center;
-//     cursor: pointer;
+  @media only screen and (max-width: $bp-large) {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
-//     @include respond(tab-port) {
-//       top: 3rem;
-//       right: 3rem;
-//     }
-//   }
+  &__checkbox {
+    position: fixed;
+  }
 
-//   &__background {
-//     height: 6rem;
-//     width: 6rem;
-//     border-radius: 50%;
-//     position: fixed;
-//     top: 6.5rem;
-//     right: 6.5rem;
-//     background-image: radial-gradient(
-//       $color-primary-light,
-//       $color-primary-dark
-//     );
-//     z-index: 500;
-//     transition: transform 0.6s cubic-bezier(0.53, -0.23, 0.265, 0.45);
+  &__button {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 29500;
+    box-shadow: 0 0 0.5rem rgba(black, 0.2);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
 
-//     @include respond(tab-port) {
-//       top: 3.5rem;
-//       right: 3.5rem;
-//     }
-//   }
+    &:hover {
+      background-color: lighten(rgb(216, 233, 243), 3%);
+    }
+  }
 
-//   &__nav {
-//     height: 100vh;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     z-index: 550;
-//     opacity: 0;
-//     width: 0;
-//     transition: all 0.8s;
-//   }
+  &__nav {
+    background-color: transparent;
+    position: fixed;
+    top: 10rem;
+    right: 1.5rem;
+    z-index: 29000;
+    box-shadow: 0 1rem 3rem rgba(black, 0.1);
 
-//   &__list {
-//     @include center_within_block;
-//     list-style: none;
-//     text-align: center;
-//     width: 100%;
-//   }
+    opacity: 0;
+    width: 30rem;
+    transition: opacity 0.7s;
 
-//   &__item {
-//     margin: 1rem;
-//     //transition: all 0.3s;
-//   }
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      top: 0;
+      right: 0;
+    }
 
-//   &__link {
-//     &:link,
-//     &:visited {
-//       display: inline-block;
-//       font-size: 3rem;
-//       font-weight: 300;
-//       padding: 1rem 2rem;
-//       color: $color-white;
-//       text-transform: uppercase;
-//       text-decoration: none;
-//       background-image: linear-gradient(
-//         120deg,
-//         transparent 0%,
-//         transparent 50%,
-//         $color-white 50%
-//       );
-//       background-size: 230%;
-//       transition: all 0.4s;
+    // little triangle above nav box
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1.5rem;
+      right: 2rem;
+      border-left: 1.5rem solid transparent;
+      border-right: 1.5rem solid transparent;
+      border-bottom: 1.5rem solid whitesmoke;
+    }
+  }
 
-//       span {
-//         margin-right: 1.5rem;
-//         display: inline-block;
-//       }
-//     }
+  &__list {
+    list-style: none;
+  }
 
-//     &:hover,
-//     &:active {
-//       background-position: 100%;
-//       color: $color-primary-light;
-//       transform: translateX(2rem);
-//     }
-//   }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    text-transform: lowercase;
+    margin-bottom: 0;
+    text-align: center;
+    width: 30rem;
+    background-image: linear-gradient(
+      90deg,
+      whitesmoke 0%,
+      whitesmoke 50%,
+      $color-almost-black 50%
+    );
+    background-size: 200%;
+    transition: background-position 0.4s;
 
-//   //functionality
-//   &__checkbox:checked ~ &__background {
-//     transform: scale(80);
-//   }
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      background-image: none;
+      background-color: whitesmoke;
+    }
 
-//   &__checkbox:checked ~ &__nav {
-//     opacity: 1;
-//     width: 100%;
-//   }
+    &:first-child {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
 
-//   //icon
-//   &__icon {
-//     position: relative;
-//     margin-top: 3.5rem;
+    &:not(:last-child) {
+      border-bottom: 1px solid gainsboro;
+    }
 
-//     &,
-//     &::before,
-//     &::after {
-//       display: inline-block;
-//       width: 3rem;
-//       height: 2px;
-//       background-color: $color-grey-dark-3;
-//     }
+    &:hover,
+    &:active {
+      background-position: 100%;
 
-//     &::before,
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       left: 0;
-//       transition: all 0.25s;
-//     }
+      @media only screen and (max-width: $bp-small) {
+        background-position: 0%;
+      }
 
-//     &::before {
-//       top: -0.8rem;
-//     }
+      &:active {
+        @media only screen and (max-width: $bp-small) {
+          background-color: $color-almost-black;
+        }
+      }
+    }
 
-//     &::after {
-//       top: 0.8rem;
-//     }
-//   }
+    & a {
+      color: $color-almost-black;
+      width: 100%;
+      padding: 2.6rem;
+      transition: color 0.6s 0.2s;
 
-//   &__button:hover &__icon::before {
-//     top: -1rem;
-//   }
-//   &__button:hover &__icon::after {
-//     top: 1rem;
-//   }
+      @media only screen and (max-width: $bp-small) {
+        transition: none;
+      }
 
-//   &__checkbox:checked + &__button &__icon {
-//     background-color: transparent;
-//   }
-//   &__checkbox:checked + &__button &__icon::before {
-//     transform: rotate(135deg);
-//     top: 0;
-//   }
+      &:hover,
+      &:active {
+        color: whitesmoke;
 
-//   &__checkbox:checked + &__button &__icon::after {
-//     transform: rotate(-135deg);
-//     top: 0;
-//   }
-// }
+        @media only screen and (max-width: $bp-small) {
+          color: $color-almost-black;
+        }
+      }
+
+      &:active {
+        @media only screen and (max-width: $bp-small) {
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+
+  // opened nav menu
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    pointer-events: auto;
+    width: 30rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
+  }
+
+  // nav menu icon
+  &__icon {
+    position: relative;
+    margin-top: 2.8rem;
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 4px;
+      background-color: lighten($color-default-text, 6%);
+      display: inline-block;
+      border-radius: 2px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.4s;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+
+    &::after {
+      top: 0.95rem;
+    }
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button {
+    @media only screen and (max-width: $bp-small) {
+      top: 1rem;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(135deg);
+  }
+}
