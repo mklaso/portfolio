@@ -112,7 +112,6 @@ body {
     top: 10rem;
     right: 1.5rem;
     z-index: 29000;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     opacity: 0;
     width: 30rem;
     transition: opacity 0.7s; }
@@ -128,10 +127,11 @@ body {
       right: 2rem;
       border-left: 1.5rem solid transparent;
       border-right: 1.5rem solid transparent;
-      border-bottom: 1.5rem solid whitesmoke; }
+      border-bottom: 1.5rem solid #e3e3e3; }
   .navigation__list {
     list-style: none; }
   .navigation__item {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +140,7 @@ body {
     margin-bottom: 0;
     text-align: center;
     width: 30rem;
-    background-image: linear-gradient(90deg, whitesmoke 0%, whitesmoke 50%, #292a2d 50%);
+    background-image: linear-gradient(90deg, #e3e3e3 0%, #e3e3e3 50%, #292a2d 50%);
     background-size: 200%;
     transition: background-position 0.4s; }
     @media only screen and (max-width: 37.5em) {
