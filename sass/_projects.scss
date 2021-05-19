@@ -279,7 +279,7 @@
     position: relative;
     &::after {
       @include style-after-element(
-        20rem,
+        40rem,
         3rem,
         darken($color-background-2, 7%),
         darken($color-background-2, 10%)
@@ -287,12 +287,19 @@
 
       @media only screen and (max-width: $bp-largest) {
         @include style-after-element(
-          23rem,
+          43rem,
           3rem,
           darken($color-background-2, 7%),
           darken($color-background-2, 10%)
         );
       }
+
+       @media only screen and (max-width: $bp-large) {
+         @include style-after-element(46rem,
+           3rem,
+           darken($color-background-2, 7%),
+           darken($color-background-2, 10%));
+       }
     }
   }
 }
