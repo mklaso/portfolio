@@ -59,116 +59,87 @@
         </ul>
       </nav>
     </div>
-    
-    <!-- 0. sidebar/site navigation section -->
-    <div class="sidebar">
-      <div class="sidebar__info">
-        <a href="#header">
-          <svg class="sidebar__icon sidebar__icon--home sidebar__info--icon">
-            <use xlink:href="resources/sprite.svg#icon-home"></use>
-          </svg>
-          <p class="sidebar__info--text">top</p>
-        </a>
-      </div>
 
-      <div class="sidebar__main-container">
-        <div class="sidebar__info">
+    <!-- new navbar -->
+    <nav class="new_navbar">
+      <!-- this should be on the leftside of the nav (with special font) -->
+      <p class="new_navbar--home_name">
+        mklaso
+      </p> 
+      <!-- this list should be the actual nav, on the right side -->
+      <ul class="new_navbar__list">
+        <li class="new_navbar__list--item">
+          <div class="new_navbar__list__links">
+            <a href="mailto:mklasninovski@gmail.com" target="_blank">
+            <svg class="new_navbar__list__links--icon">
+              <use xlink:href="resources/sprite.svg#icon-envelope-b"></use>
+            </svg>
+            </a>
+            <a href="https://www.github.com/mklaso" target="_blank">
+            <svg class="new_navbar__list__links--icon">
+              <use xlink:href="resources/sprite.svg#icon-github"></use>
+            </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/martin-klasninovski" target="_blank">
+            <svg class="new_navbar__list__links--icon">
+              <use xlink:href="resources/sprite.svg#icon-linkedin2"></use>
+            </svg>
+            </a>
+            <div class="vl-separator"></div>
+          </div>
+        </li>
+        <li class="new_navbar__list--item">
           <a href="#about">
-            <svg
-              class="sidebar__icon sidebar__icon--profile sidebar__info--icon"
-            >
-              <use xlink:href="resources/sprite.svg#icon-user-circle"></use>
-            </svg>
-            <p class="sidebar__info--text">about</p>
+            <p>About</p>
           </a>
-        </div>
-
-        <div class="sidebar__info">
-          <a href="#skills">
-            <svg
-              class="sidebar__icon sidebar__icon--skills sidebar__info--icon"
-            >
-              <use xlink:href="resources/sprite.svg#icon-cog"></use>
-            </svg>
-            <p class="sidebar__info--text">skills</p>
-          </a>
-        </div>
-
-        <div class="sidebar__info">
+        </li>
+        <li class="new_navbar__list--item">
           <a href="#projects">
-            <svg
-              class="sidebar__icon sidebar__icon--projects sidebar__info--icon"
-            >
-              <use xlink:href="resources/sprite.svg#icon-remove_red_eye"></use>
-            </svg>
-            <p class="sidebar__info--text">projects</p>
+            <p>Projects</p>
           </a>
-        </div>
-
-        <div class="sidebar__info">
+        </li>
+        <li class="new_navbar__list--item">
           <a href="#contact">
-            <svg class="sidebar__icon sidebar__icon--mail sidebar__info--icon">
-              <use
-                xlink:href="resources/sprite.svg#icon-mail-envelope-closed"
-              ></use>
-            </svg>
-            <p class="sidebar__info--text">contact</p>
+            <p>Contact</p>
           </a>
-        </div>
-      </div>
-
-      <div class="sidebar__sub-container">
-        <a href="https://www.github.com/mklaso" target="_blank">
-          <svg
-            class="sidebar__icon sidebar__icon--github sidebar__sub-container--icon"
-          >
-            <use xlink:href="resources/sprite.svg#icon-github"></use>
-          </svg>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/martin-klasninovski"
-          target="_blank"
-        >
-          <svg
-            class="sidebar__icon sidebar__icon--linkedin sidebar__sub-container--icon"
-          >
-            <use xlink:href="resources/sprite.svg#icon-linkedin"></use>
-          </svg>
-        </a>
-
-        <a href="resources/martin_klasninovski_resume.pdf" target="_blank">
-          <svg class="sidebar__icon sidebar__sub-container--icon">
-            <use xlink:href="resources/sprite.svg#icon-document-text"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
+        </li>
+        <li class="new_navbar__list--item">
+          <a href="resources/martin_klasninovski_resume.pdf" target="_blank">
+            <p>Resume</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of new navbar section -->
 
     <!-- 1. intro/header section -->
 
     <header class="header" id="header">
       <div class="header__intro u-margin-bottom-large">
-        <span class="span-first">Hi,</span>
+        <span class="span-first">Hi, I'm</span>
         <h1 class="heading--1">
-          I'm <span class="letter-highlight">M</span>artin<span
+          <span class="letter-highlight">M</span>artin Klasninovski<span
             class="letter-highlight letter-highlight-dot"
             >.</span
           >
         </h1>
         <span class="span-second"
-          >aspiring software engineer</span
+          >cs student and aspiring software engineer</span
         >
       </div>
-      <div class="header__icon-container">
+      <!-- <div class="header__icon-container">
         <img src="resources/m-logo.png" alt="Site logo" class="header__icon" />
-      </div>
+      </div> -->
 
       <a href="#about">
         <svg class="header__arrow">
-          <use xlink:href="resources/sprite2.svg#icon-circle-down"></use>
+          <use xlink:href="resources/sprite.svg#icon-circle-down"></use>
         </svg>
       </a>
+      <div class="diagonal-lower">
+      </div>
+            <div class="diagonal-upper">
+            </div>
     </header>
 
     <!-- 2. about me section -->
@@ -412,81 +383,45 @@
     <!-- 5. contact me section -->
     <section class="contact" id="contact">
       <div class="contact__container">
+        <p class="contact__heading">
+          Thanks for checking out my portfolio!
+        </p>
         <div class="contact__text">
-          <h2 class="heading--2">contact me</h2>
           <p>
-              Thanks for checking out my portfolio!
+            Feel free to send me a message if you'd like to talk about any of my projects, possible job opportunities, or really anything that comes to mind.
           </p>
           <p>
-              Feel free to send me a message if you'd like to talk about any of my projects, possible job opportunities, or really anything that comes to mind!
-          </p>
-          <p>
-            contact me at:
-            <span
-              ><a href="mailto:mklasninovski@gmail.com" target="_blank"
-                >mklasninovski@gmail.com</a
-              ></span
-            >
+            You can contact me directly through any of the links below!
           </p>
 
-          <ul class="contact__list">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/martin-klasninovski"
-                target="_blank"
-              >
-                <svg class="contact__list--icon">
-                  <use xlink:href="resources/sprite.svg#icon-linkedin"></use>
-                </svg>
+        <ul class="contact__list">
+          <li class="contact__list--item">
+            <div class="contact__list__links">
+              <a href="mailto:mklasninovski@gmail.com" target="_blank">
+              <svg class="contact__list__links--icon">
+                <use xlink:href="resources/sprite.svg#icon-envelope-b"></use>
+              </svg>
               </a>
-            </li>
-            <li>
               <a href="https://www.github.com/mklaso" target="_blank">
-                <svg class="contact__list--icon">
-                  <use xlink:href="resources/sprite.svg#icon-github"></use>
-                </svg>
+              <svg class="contact__list__links--icon">
+                <use xlink:href="resources/sprite.svg#icon-github"></use>
+              </svg>
               </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="contact__form">
-          <form action="#">
-            <input
-              type="text"
-              placeholder="name"
-              class="contact__form--input"
-              id="name"
-              required
-            />
-            <label for="name" class="contact__form--label">name</label>
-            <input
-              type="email"
-              placeholder="email address"
-              class="contact__form--input"
-              id="email"
-              required
-            />
-            <label for="email" class="contact__form--label"
-              >email address</label
-            >
-            <textarea
-              name="message"
-              placeholder="message"
-              class="contact__form--input"
-              id="message"
-              required
-            ></textarea>
-
-            <input type="submit" value="submit" class="contact__form--submit" />
-          </form>
+              <a href="https://www.linkedin.com/in/martin-klasninovski" target="_blank">
+              <svg class="contact__list__links--icon">
+                <use xlink:href="resources/sprite.svg#icon-linkedin2"></use>
+              </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
         </div>
       </div>
     </section>
 
     <!-- 6. footer/copyright section -->
     <footer class="footer">
-      <h4 class="heading--4">&copy; 2020 Martin Klasninovski</h4>
+      <h4 class="heading--4">&copy; 2021 Martin Klasninovski</h4>
     </footer>
   </body>
 </html>

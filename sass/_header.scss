@@ -26,30 +26,6 @@
     }
   }
 
-  // position the site logo top-left header/webpage
-  &__icon-container {
-    background-color: whitesmoke;
-
-    // positioning to overlap home icon
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    z-index: 50;
-    top: 2rem;
-    left: 1.5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-
-    @media only screen and (max-width: $bp-large) {
-      width: 0;
-      height: 0;
-      opacity: 0;
-    }
-  }
-
   &__icon {
     width: 3.5rem;
     height: 3.5rem;

@@ -74,14 +74,13 @@
     margin-bottom: 0;
     text-align: center;
     width: 30rem;
-    background-image: linear-gradient(
-      90deg,
-      darken(whitesmoke, 7%) 0%,
-      darken(whitesmoke, 7%) 50%,
-      $color-almost-black 50%
-    );
+    background-image: linear-gradient(90deg,
+        darken(whitesmoke, 7%) 0%,
+        darken(whitesmoke, 7%) 50%,
+        $color-almost-black 50%);
     background-size: 200%;
     transition: background-position 0.4s;
+
     @media only screen and (max-width: $bp-large) {
       pointer-events: none;
     }
@@ -96,6 +95,7 @@
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
     }
+
     &:last-child {
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
@@ -119,6 +119,7 @@
         }
       }
     }
+
 
     & a {
       color: $color-almost-black;
@@ -148,7 +149,7 @@
   }
 
   // opened nav menu
-  &__checkbox:checked ~ &__nav {
+  &__checkbox:checked~&__nav {
     opacity: 1;
     pointer-events: auto;
     width: 30rem;
@@ -158,7 +159,7 @@
     }
   }
 
-  &__checkbox:checked ~ &__nav &__item {
+  &__checkbox:checked~&__nav &__item {
     @media only screen and (max-width: $bp-large) {
       pointer-events: auto;
     }
@@ -168,6 +169,7 @@
   &__icon {
     position: relative;
     margin-top: 2.8rem;
+
     &,
     &::before,
     &::after {
@@ -195,11 +197,11 @@
     }
   }
 
-  &__checkbox:checked + &__button &__icon {
+  &__checkbox:checked+&__button &__icon {
     background-color: transparent;
   }
 
-  &__checkbox:checked + &__button {
+  &__checkbox:checked+&__button {
     @media only screen and (max-width: $bp-small) {
       top: 1rem;
       background-color: transparent;
@@ -207,12 +209,12 @@
     }
   }
 
-  &__checkbox:checked + &__button &__icon::before {
+  &__checkbox:checked+&__button &__icon::before {
     top: 0;
     transform: rotate(-135deg);
   }
 
-  &__checkbox:checked + &__button &__icon::after {
+  &__checkbox:checked+&__button &__icon::after {
     top: 0;
     transform: rotate(135deg);
   }
