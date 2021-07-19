@@ -1,8 +1,9 @@
 .projects {
-  background-color: rgb(245, 245, 245);
+  // background-color: rgb(248, 239, 234);
   grid-column: full-start / full-end;
   z-index: 1;
   padding: 8rem 2rem;
+  margin-bottom: 10rem;
 
   display: flex;
   flex-direction: column;
@@ -137,6 +138,7 @@
 
       & .heading--5 {
         color: lighten(#d6d7e6, 5%);
+
         @media only screen and (max-width: $bp-large) {
           font-size: 2rem;
           color: $color-almost-black;
@@ -177,15 +179,16 @@
       }
 
       &:nth-child(2n) {
-        box-shadow: 10px -10px 0 darken(rgb(216, 233, 243), 4%);
+        box-shadow: 10px -10px 0 $color-light-blue;
         margin-left: 0.75rem;
       }
+
       margin-right: 0.75rem;
-      box-shadow: -10px -10px 0 lighten(#8b55ce, 30%);
+      box-shadow: -10px -10px 0 $color-purple-light;
 
       &:nth-child(2n) {
         @media only screen and (max-width: $bp-large) {
-          box-shadow: 8px 8px 0 darken(rgb(216, 233, 243), 4%);
+          box-shadow: 8px 8px 0 $color-light-blue;
         }
 
         @media only screen and (max-width: $bp-smallest) {
@@ -194,7 +197,7 @@
       }
 
       @media only screen and (max-width: $bp-large) {
-        box-shadow: 8px 8px 0 lighten(#8b55ce, 30%);
+        box-shadow: 8px 8px 0 $color-purple-light;
       }
 
       @media only screen and (max-width: $bp-smallest) {
@@ -217,11 +220,16 @@
           padding: 0.5rem 1rem;
           list-style: none;
           cursor: pointer;
-          box-shadow: 5px 5px 0 lighten(#8b55ce, 25%);
+          box-shadow: 5px 5px 0 $color-purple-light;
           position: relative;
           top: 0;
           left: 0;
           transition: all 0.4s;
+
+          & a {
+            text-decoration: none;
+            color: $color-black-2;
+          }
 
           @media only screen and (max-width: $bp-large) {
             margin: 0 1rem;
@@ -232,13 +240,13 @@
             padding: 1rem 1.5rem;
             font-size: 2rem;
             margin-top: 1rem;
-            box-shadow: 5px 5px 0 lighten(#8b55ce, 30%);
+            box-shadow: 5px 5px 0 $color-purple-light;
           }
 
           &:hover {
             transform: translate(5px, 5px);
-            background-color: lighten(#8b55ce, 30%);
-            box-shadow: 0px 0px 0 lighten(#8b55ce, 30%);
+            background-color: lighten($color-purple-light, 8%);
+            box-shadow: 0px 0px 0 $color-purple-light;
           }
 
           &:active {
@@ -247,21 +255,22 @@
         }
 
         &-link-btn-even {
-          box-shadow: -5px 5px 0 darken(rgb(216, 233, 243), 11%);
+          box-shadow: -5px 5px 0 $color-light-blue;
 
           &:hover {
             transform: translate(-5px, 5px);
-            box-shadow: 0px 0px 0 darken(rgb(216, 233, 243), 6%);
-            background-color: darken(rgb(216, 233, 243), 4%);
+            box-shadow: 0px 0px 0 $color-light-blue;
+            background-color: lighten($color-light-blue, 5%);
 
             @media only screen and (max-width: $bp-large) {
               transform: translate(5px, 5px);
-              background-color: rgb(216, 233, 243);
+              background-color: $color-light-blue;
             }
           }
 
           &:active {
             transform: translate(-5px, 8px);
+
             @media only screen and (max-width: $bp-large) {
               transform: translate(5px, 8px);
             }
@@ -277,29 +286,26 @@
 
   & .heading--2 {
     position: relative;
+
     &::after {
-      @include style-after-element(
-        40rem,
+      @include style-after-element(40rem,
         3rem,
         darken($color-background-2, 7%),
-        darken($color-background-2, 10%)
-      );
+        darken($color-background-2, 10%));
 
       @media only screen and (max-width: $bp-largest) {
-        @include style-after-element(
-          43rem,
+        @include style-after-element(43rem,
           3rem,
           darken($color-background-2, 7%),
-          darken($color-background-2, 10%)
-        );
+          darken($color-background-2, 10%));
       }
 
-       @media only screen and (max-width: $bp-large) {
-         @include style-after-element(46rem,
-           3rem,
-           darken($color-background-2, 7%),
-           darken($color-background-2, 10%));
-       }
+      @media only screen and (max-width: $bp-large) {
+        @include style-after-element(46rem,
+          3rem,
+          darken($color-background-2, 7%),
+          darken($color-background-2, 10%));
+      }
     }
   }
 }

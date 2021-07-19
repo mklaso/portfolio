@@ -9,6 +9,10 @@ $color-light-gray: #a9a9b3;
 
 $color-yellow: #fcde7c;
 $color-pink: #f3b9ff;
+$color-orange: #ffa552;
+$color-purple:#7e75ff;
+$color-purple-light: lighten(#7e75ff, 5%);
+$color-black-2: lighten(#434751, 5%);
 
 $color-white: #fff;
 $color-black: #000;
@@ -16,6 +20,7 @@ $color-black: #000;
 $color-default-text: rgba(41, 42, 45, 0.85);
 $color-background-2: #e7eff4;
 // rgb(216, 233, 243) blue colour in linear gradient
+$color-light-blue: rgb(216, 233, 243);
 
 //font
 $default-font-size: 1.6rem;
