@@ -60,9 +60,8 @@ body {
 .heading--4 {
   font-size: 1.8rem;
   font-weight: 300;
-  color: #a9a9b3;
-  text-align: center;
-  text-shadow: 1px 1px 16px gray; }
+  color: #292a2d;
+  text-align: center; }
 
 .heading--5 {
   font-size: 1.6rem;
@@ -870,7 +869,7 @@ body {
           color: #7e75ff; }
 
 .footer {
-  background-color: #292a2d;
+  background-color: whitesmoke;
   grid-column: full-start / full-end;
-  padding: 1.5rem 0;
+  padding: 2.5rem 0;
   border-top: 1px solid whitesmoke; }
