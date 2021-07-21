@@ -31,6 +31,20 @@ body {
   background-color: #292a2d;
   color: white; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 1.4rem; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #968fff; }
+
 body {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
@@ -44,7 +58,10 @@ body {
   color: rgba(41, 42, 45, 0.85); }
   @media only screen and (max-width: 50em) {
     .heading--1 {
-      font-size: 6.5rem; } }
+      font-size: 7.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading--1 {
+      font-size: 6rem; } }
 
 .heading--2 {
   font-size: 3.5rem;
@@ -62,7 +79,7 @@ body {
 
 .heading--4 {
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #292a2d;
   text-align: center; }
 
@@ -817,7 +834,7 @@ body {
     width: 100%; }
   .contact__heading {
     text-align: center;
-    font-size: 4.8rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
     font-weight: 600;
     text-shadow: 2px 2px 8px #292a2d;

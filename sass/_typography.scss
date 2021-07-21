@@ -12,7 +12,11 @@ body {
   color: $color-default-text;
 
   @media only screen and (max-width: $bp-medium) {
-    font-size: 6.5rem;
+    font-size: 7.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 6rem;
   }
 }
 
@@ -35,7 +39,7 @@ body {
 
 .heading--4 {
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
   color: $color-almost-black;
   text-align: center;
   //text-shadow: 1px 1px 16px gray;

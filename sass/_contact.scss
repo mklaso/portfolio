@@ -36,34 +36,18 @@
 
   &__heading {
     text-align: center;
-    font-size: 4.8rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
     font-weight: 600;
     text-shadow: 2px 2px 8px $color-almost-black;
     position: relative;
     padding: 0;
     display: inline-block;
-
-    // could just give this part those header boxes style that i'll eventually create that looks like: <=====>
-
-    // &::after {
-    //   content: "";
-    //   background-color: lighten(#434751, 2%);
-    //   bottom: 0;
-    //   left: 0;
-    //   height: 8px;
-    //   width: 100rem;
-    //   border-radius: 2px;
-    //   transform: translate(20%, 0%);
-    //   position: absolute;
-    //   z-index: -1;
-    // }
   }
 
   // text / left side
   &__text {
     align-items: center;
-    // margin-left: 10rem;
     margin-right: 0;
 
     @media only screen and (max-width: $bp-medium) {

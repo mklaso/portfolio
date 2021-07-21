@@ -42,3 +42,21 @@ body {
   background-color: $color-almost-black;
   color: white;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darken(#e5e5e5, 8%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lighten(#7e75ff, 5%);
+}
