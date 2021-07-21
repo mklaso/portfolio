@@ -188,7 +188,7 @@
 
       &:nth-child(2n) {
         @media only screen and (max-width: $bp-large) {
-          box-shadow: 8px 8px 0 $color-light-blue;
+          box-shadow: 0px 8px 0 $color-light-blue;
         }
 
         @media only screen and (max-width: $bp-smallest) {
@@ -197,7 +197,7 @@
       }
 
       @media only screen and (max-width: $bp-large) {
-        box-shadow: 8px 8px 0 $color-purple-light;
+        box-shadow: 0px 8px 0 $color-purple-light;
       }
 
       @media only screen and (max-width: $bp-smallest) {

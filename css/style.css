@@ -42,6 +42,9 @@ body {
   font-weight: 400;
   text-shadow: 2px 2px 6px gray;
   color: rgba(41, 42, 45, 0.85); }
+  @media only screen and (max-width: 50em) {
+    .heading--1 {
+      font-size: 6.5rem; } }
 
 .heading--2 {
   font-size: 3.5rem;
@@ -84,7 +87,7 @@ body {
   grid-row: -1 / -1;
   opacity: 0;
   pointer-events: none; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 50em) {
     .navigation {
       opacity: 1;
       pointer-events: auto; } }
@@ -142,7 +145,9 @@ body {
     background-image: linear-gradient(90deg, #e3e3e3 0%, #e3e3e3 50%, #292a2d 50%);
     background-size: 200%;
     transition: background-position 0.4s; }
-    @media only screen and (max-width: 62.5em) {
+    .navigation__item > a {
+      text-decoration: none; }
+    @media only screen and (max-width: 50em) {
       .navigation__item {
         pointer-events: none; } }
     @media only screen and (max-width: 37.5em) {
@@ -189,7 +194,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .navigation__checkbox:checked ~ .navigation__nav {
         width: 100%; } }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 50em) {
     .navigation__checkbox:checked ~ .navigation__nav .navigation__item {
       pointer-events: auto; } }
   .navigation__icon {
@@ -229,7 +234,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  opacity: 1;
   font-size: 1.8rem;
   font-weight: 700;
   height: 7rem;
@@ -237,7 +241,12 @@ body {
   padding: 2rem 6rem;
   position: fixed;
   top: 0;
-  z-index: 3000; }
+  z-index: 3000;
+  opacity: 1; }
+  @media only screen and (max-width: 50em) {
+    .new_navbar {
+      opacity: 0;
+      pointer-events: none; } }
   .new_navbar--home_name {
     color: #7e75ff;
     font-size: 2.4rem;
@@ -676,13 +685,13 @@ body {
         margin-left: 0.75rem; }
       @media only screen and (max-width: 62.5em) {
         .projects-container__info:nth-child(2n) {
-          box-shadow: 8px 8px 0 #d8e9f3; } }
+          box-shadow: 0px 8px 0 #d8e9f3; } }
       @media only screen and (max-width: 28.125em) {
         .projects-container__info:nth-child(2n) {
           box-shadow: none; } }
       @media only screen and (max-width: 62.5em) {
         .projects-container__info {
-          box-shadow: 8px 8px 0 #968fff; } }
+          box-shadow: 0px 8px 0 #968fff; } }
       @media only screen and (max-width: 28.125em) {
         .projects-container__info {
           box-shadow: none; } }

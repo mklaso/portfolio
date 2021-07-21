@@ -11,10 +11,12 @@
   justify-content: center;
   position: relative;
 
+
   &__intro {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  
 
     // heading text
     & > span {

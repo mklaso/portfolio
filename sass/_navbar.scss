@@ -3,8 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  opacity: 1;
-
   font-size: 1.8rem;
   font-weight: 700;
   height: 7rem;
@@ -13,6 +11,12 @@
   position: fixed;
   top: 0;
   z-index: 3000;
+  opacity: 1;
+
+  @media only screen and (max-width: $bp-medium) {
+    opacity: 0;
+    pointer-events: none;
+  }
 
   &--home_name {
     color: #7e75ff;

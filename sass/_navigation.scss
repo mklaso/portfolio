@@ -3,7 +3,7 @@
   opacity: 0;
   pointer-events: none;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-medium) {
     opacity: 1;
     pointer-events: auto;
   }
@@ -81,7 +81,11 @@
     background-size: 200%;
     transition: background-position 0.4s;
 
-    @media only screen and (max-width: $bp-large) {
+    & > a {
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
       pointer-events: none;
     }
 
@@ -160,7 +164,7 @@
   }
 
   &__checkbox:checked~&__nav &__item {
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-medium) {
       pointer-events: auto;
     }
   }
