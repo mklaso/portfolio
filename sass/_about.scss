@@ -14,23 +14,24 @@
   & .heading--2 {
     position: relative;
     display: inline-block;
+    
 
-    &::after {
-      @include style-after-element(
-        16rem,
-        3rem,
-        darken($color-background-2, 7%),
-        darken($color-background-2, 10%)
-      );
-      @media only screen and (max-width: $bp-largest) {
-        @include style-after-element(
-          18.5rem,
-          3rem,
-          darken($color-background-2, 7%),
-          darken($color-background-2, 10%)
-        );
-      }
-    }
+    // &::after {
+    //   @include style-after-element(
+    //     16rem,
+    //     3rem,
+    //     darken($color-background-2, 7%),
+    //     darken($color-background-2, 10%)
+    //   );
+    //   @media only screen and (max-width: $bp-largest) {
+    //     @include style-after-element(
+    //       18.5rem,
+    //       3rem,
+    //       darken($color-background-2, 7%),
+    //       darken($color-background-2, 10%)
+    //     );
+    //   }
+    // }
   }
 
   .about-container {

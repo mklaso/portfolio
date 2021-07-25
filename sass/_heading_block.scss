@@ -1,0 +1,45 @@
+.heading-block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: $color-light-blue;
+    height: 6rem;
+    position: relative;
+    border-left: 0.5rem solid lighten(#434751, 2%);
+
+     @media only screen and (max-width: $bp-small) {
+       height: 5rem;
+     }
+
+    &--2 {
+      background-color: lighten($color-light-purple,5%);
+    }
+    
+    & > h2 {
+      color:lighten(#434751, 2%);
+    }
+}
+
+.heading-block::after {
+  content: "";
+  z-index: 200;
+  left: 100%;
+  top: 0;
+  height: 0;
+  width: 0;
+  position: absolute;
+  background-color: transparent;
+  border-top: 0rem solid transparent;
+  border-bottom: 6rem solid transparent;
+  border-left: 2rem solid $color-light-blue;
+
+     @media only screen and (max-width: $bp-small) {
+       border-bottom: 5rem solid transparent;
+     }
+}
+
+.heading-block--2::after {
+  border-left: 2rem solid lighten($color-light-purple, 5%);
+}

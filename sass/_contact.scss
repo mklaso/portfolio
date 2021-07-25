@@ -1,6 +1,6 @@
 .contact {
 
-  background: darken($color-purple-light, 3%);
+  background: darken($color-light-purple, 3%);
   padding: 2rem 0rem; //4rem 0rem;
 
   grid-column: full-start / full-end;
@@ -99,12 +99,12 @@
       &--icon {
         width: 3.6rem;
         height: 3.6rem;
-        fill: lighten(#434751, 2%);
+        fill: lighten(#434751, 5%);
         transition: 0.3s;
         margin: 0rem 2rem;
 
         &:hover {
-          fill: #7e75ff;
+          fill: $color-purple;
         }
       }
     }
