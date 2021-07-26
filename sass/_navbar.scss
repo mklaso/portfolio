@@ -18,10 +18,29 @@
     pointer-events: none;
   }
 
-  &--home_name {
-    color: $color-purple;
-    font-size: 2.4rem;
-    width: 100%;
+  &_home {
+    display: flex;
+    // justify-content: flex-start;
+    align-items: flex-start;
+
+    &--icon {
+      height: 2.7rem ;
+      width: 2.5rem;
+      fill: lighten(#434751, 5%);
+      transition: 0.3s;
+
+      &:hover {
+        fill: $color-purple;
+      }
+    }
+
+
+    &--name {
+      color: $color-purple;
+      font-size: 2.4rem;
+      width: 100%;
+      margin-left: 1rem;
+    }
   }
 
   &__list {

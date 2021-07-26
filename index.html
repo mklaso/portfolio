@@ -63,9 +63,18 @@
     <!-- new navbar -->
     <nav class="new_navbar">
       <!-- this should be on the leftside of the nav (with special font) -->
-      <p class="new_navbar--home_name">
-        mklaso
-      </p> 
+      <div class="new_navbar_home">
+        <a href="#">
+          <svg class="new_navbar_home--icon">
+            <use xlink:href="resources/sprite.svg#icon-home"></use>
+          </svg>
+        </a>
+        <p class="new_navbar_home--name">
+          mklaso
+        </p> 
+        
+      </div>
+      
       <!-- this list should be the actual nav, on the right side -->
       <ul class="new_navbar__list">
         <li class="new_navbar__list--item">
@@ -298,7 +307,8 @@
           </ul>
           <ul class="projects-container__info--links">
             <li class="projects-container__info--links-link-btn projects-container__info--links-link-btn-even">
-                <a href="https://github.com/mklaso/weather-app">Github</a>
+                <a href="https://github.com/mklaso/weather-app"
+                target="_blank">Github</a>
             </li>
 
             <li class="projects-container__info--links-link-btn projects-container__info--links-link-btn-even">
@@ -321,10 +331,11 @@
           </ul>
           <ul class="projects-container__info--links">
             <li class="projects-container__info--links-link-btn">
-                <a href="https://github.com/mklaso/sujoku">Github</a>
+                <a href="https://github.com/mklaso/sudoku-solver" target="_blank">Github</a>
             </li>
             <li class="projects-container__info--links-link-btn">
-                <a href="https://mklaso.github.io/sujoku/">View Live</a>
+                <a href="https://mklaso.github.io/sudoku-solver/"
+                target="_blank">View Live</a>
             </li>
           </ul>
 
@@ -348,7 +359,7 @@
           <ul class="projects-container__info--links">
             <!-- insert github link / live website link -->
             <li class="projects-container__info--links-link-btn projects-container__info--links-link-btn-even">
-                <a href="https://github.com/mklaso/weather-app">Github</a>
+                <a href="#">Github</a>
             </li>
 
             <li class="projects-container__info--links-link-btn projects-container__info--links-link-btn-even">
@@ -371,7 +382,8 @@
           <ul class="projects-container__info--links">
             <!-- insert github link / live website link -->
             <li class="projects-container__info--links-link-btn">
-                <a href="https://github.com/mklaso/face-recognition">Github</a>
+                <a href="https://github.com/mklaso/face-recognition"
+                target="_blank">Github</a>
             </li>
 
             <li class="projects-container__info--links-link-btn">
