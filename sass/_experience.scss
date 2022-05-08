@@ -1,0 +1,49 @@
+.experience {
+  background-color: pink;
+  grid-column: content-start / content-end;
+  padding: 8rem 2rem;
+
+  &-container {
+    // background-color: green;
+    background-color: purple;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  &-work {
+    background-color: cyan;
+    padding: 2rem 1rem;
+    display: flex;
+
+    // only apply between work experience
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &__img {
+      // probably better to just make height/width fixed, then adjust w/ media queries
+      width: 15%;
+      height: 15rem;
+      background-color: green;
+    }
+
+    &__content {
+      background-color: whitesmoke;
+      padding: 1rem;
+      width: 90%; // change to fixed length after img is set to fixed length, or just set this to a lower width on smaller screen sizes and make the image width a bit larger on smaller
+      margin-left: 1rem;
+
+      &--company {
+        color: $color-default-text;
+      }
+
+      &--points {
+        margin-top: 1rem;
+        color: $color-almost-black;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+  }
+}
