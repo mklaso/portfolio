@@ -1,25 +1,25 @@
 .heading-block {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    background-color: $color-light-blue;
-    height: 6rem;
-    position: relative;
-    border-left: 0.5rem solid lighten(#434751, 2%);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: $color-light-blue;
+  height: 6rem;
+  position: relative;
+  border-left: 0.5rem solid lighten(#434751, 2%);
 
-     @media only screen and (max-width: $bp-small) {
-       height: 5rem;
-     }
+  @media only screen and (max-width: $bp-small) {
+    height: 5rem;
+  }
 
-    &--2 {
-      background-color: lighten($color-light-purple,5%);
-    }
-    
-    & > h2 {
-      color:lighten(#434751, 2%);
-    }
+  &--2 {
+    background-color: whitesmoke;
+  }
+
+  & > h2 {
+    color: lighten(#434751, 2%);
+  }
 }
 
 .heading-block::after {
@@ -35,11 +35,11 @@
   border-bottom: 6rem solid transparent;
   border-left: 2rem solid $color-light-blue;
 
-     @media only screen and (max-width: $bp-small) {
-       border-bottom: 5rem solid transparent;
-     }
+  @media only screen and (max-width: $bp-small) {
+    border-bottom: 5rem solid transparent;
+  }
 }
 
 .heading-block--2::after {
-  border-left: 2rem solid lighten($color-light-purple, 5%);
+  border-left: 2rem solid whitesmoke;
 }

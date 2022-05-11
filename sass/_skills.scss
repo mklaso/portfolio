@@ -7,7 +7,7 @@
   padding: 8rem 12rem;
   z-index: -2;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     padding: 8rem 12rem;
   }
 
@@ -17,12 +17,6 @@
 
   @media only screen and (max-width: $bp-small) {
     padding: 4rem 0;
-  }
-
-  & .heading--2 {
-    // position: relative;
-    // display: inline-block;
-    // box-shadow: inset 0 -2.5rem 0 white;
   }
 
   &__whole {

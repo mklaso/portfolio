@@ -1,0 +1,115 @@
+.experience {
+  background-color: rgba(216, 233, 243, 0.6);
+  grid-column: full-start / full-end;
+  padding: 8rem 17rem;
+  padding-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+
+  // text-align: center;
+  & .heading-block {
+    color: green;
+    // align-self: center;
+    align-self: flex-start;
+
+    @media only screen and (max-width: $bp-large) {
+      align-self: center;
+    }
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 8rem 6rem;
+    padding-bottom: 0rem;
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 8rem 4rem;
+    padding-bottom: 0rem;
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    // text-align: center;
+    padding: 8rem 1rem;
+    padding-bottom: 0rem;
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem 1rem;
+    font-size: 2rem;
+  }
+
+  &-container {
+    margin-top: 2.5rem;
+  }
+
+  &-work {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 4rem 2rem;
+    display: flex;
+    // align-items: center;
+
+    // only apply between work experience
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &__img {
+      width: 15.2rem;
+      height: 15.21rem;
+      // border: 1px solid lighten(gray, 30%);
+      border: 1px solid lighten($color-purple, 12.5%);
+      border-radius: 15px;
+      align-self: start;
+      & > img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 15px;
+      }
+    }
+
+    &__content {
+      padding-left: 2rem;
+      width: 90%;
+      margin-left: 1rem;
+
+      &--company {
+        color: $color-default-text;
+
+        & span {
+          color: darken($color-purple, 2%);
+        }
+      }
+
+      &--date {
+        color: lighten($color-default-text, 10%);
+        margin-top: 0.25rem;
+      }
+
+      &--points {
+        margin-top: 2rem;
+        color: $color-almost-black;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-indent: -1.15em;
+        padding-left: 1em;
+        font-size: 1.7rem;
+
+        @media only screen and (max-width: $bp-largest) {
+          font-size: 2rem;
+        }
+
+        & span {
+          color: darken($color-purple, 10%);
+        }
+      }
+    }
+  }
+}
