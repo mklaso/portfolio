@@ -40,7 +40,7 @@
       }
     }
 
-    &--project-1 {
+    &--project-0 {
       margin-top: 5rem;
     }
 
@@ -61,6 +61,7 @@
         // width: 95vw;
       }
 
+      &-0,
       &-1,
       &-2,
       &-3,
@@ -68,6 +69,10 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
+      }
+
+      &-0 {
+        background-image: url(/resources/project-ecommerce.png);
       }
 
       &-1 {
